@@ -30,9 +30,9 @@ export default function Home() {
             </div>
             <div className="selectionBarWrapper">
                 <ul className="selectionBarList">
-                    <li className="selectionBarItem"><p>Shop</p></li>
-                    <li className="selectionBarItem"><p>Projects</p></li>
-                    <li className="selectionBarItem"><p>Contact</p></li>
+                    <li className="selectionBarItemShop"><p>Shop</p></li>
+                    <li className="selectionBarItemProject"><p>Projects</p></li>
+                    <li className="selectionBarItemContact"><p>Contact</p></li>
                 </ul>
             </div>
             <div className="mainText">
