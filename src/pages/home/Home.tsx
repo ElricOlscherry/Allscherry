@@ -1,8 +1,11 @@
 import "./Home.scss";
-
+import { Helmet } from "react-helmet";
 export default function Home() {
   return (
     <div className="home">
+        <Helmet>
+            <title>AllsCherry - Home</title>
+        </Helmet>
         <div className="firstBlock">
             <div className="logoSloganWrapper">
                 <div className="logoWrapper">
@@ -30,9 +33,9 @@ export default function Home() {
             </div>
             <div className="linkWrapper">
                 <ul className="linkList">
-                    <li className="linkItem"><a href="https://linktr.ee/eolcsvary_art/"><img src="/src/assets/linktree-footer.png"></img></a></li>
-                    <li className="linkItem"><a href="mailto:eric@eolcsvaryart.com"><img src="/src/assets/mail-footer.png"></img></a></li>
-                    <li className="linkItem"><a href="#"><img src="/src/assets/mailchimp-footer.png"></img></a></li>
+                    <li className="linkItem"><a href="https://linktr.ee/eolcsvary_art/" target="_blank"><img src="/src/assets/linktree-footer.png"></img></a></li>
+                    <li className="linkItem"><a href="mailto:eric@eolcsvaryart.com" target="_blank"><img src="/src/assets/mail-footer.png"></img></a></li>
+                    <li className="linkItem"><a href="#" target="_blank"><img src="/src/assets/mailchimp-footer.png"></img></a></li>
                 </ul>
             </div>
             <div className="seeMoreWrapper">
