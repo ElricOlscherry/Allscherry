@@ -9,6 +9,7 @@ import mailchimp from "../../assets/mailchimp-footer.png";
 import downArrow from "../../assets/downArrow.svg";
 import eric from "../../assets/eric.png";
 import ericBubble from "../../assets/eric-bubbles.png";
+import bottomBubbles from "../../assets/bottom-bubbles.png";
 export default function Home() {
   return (
     <div className="home">
@@ -76,6 +77,24 @@ export default function Home() {
                 <div className="expandedInfoText2">
                     <p>Scrolling down you will see a list of my favorite projects I've worked on, ones that I'm sure will make you smile.</p>
                     <p><br/>If you have any questions, or wish to work with me on a collaborative project, shoot me an email!</p>
+                </div>
+                <div className="bottomBubbles">
+                    <img src={bottomBubbles} alt="bottom bubbles" className="bottomBubblesImg" />
+                </div>
+                <div className="pageScrollLinksWrapper">
+                    <ul className="pageScrollLinksList">
+                        <li className="pageScrollLinksItemComics"><p>Comics</p></li>
+                        <li className="pageScrollLinksItemColabs"><p>Colabs</p></li>
+                        <li className="pageScrollLinksItemDesign"><p>Design</p></li>
+                        <li className="pageScrollLinksItemPainting"><p>Painting</p></li>
+                        <li className="pageScrollLinksItemDrawing"><p>Drawing</p></li>
+                    </ul>
+                </div>
+                <div className="pageScrollLinks2Wrapper">
+                    <ul className="pageScrollLinksList2">
+                        <li className="pageScrollLinksItemPodcast"><p>Podcst</p></li>
+                        <li className="pageScrollLinksItemMusic"><p>Music</p></li>
+                    </ul>
                 </div>
             </div>
         </div>

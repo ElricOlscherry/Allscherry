@@ -245,7 +245,121 @@
 		border-radius: 15px;
 		padding: 20px;
 		font-size: 1em;
-
+	}
+	.bottomBubbles {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		.bottomBubblesImg {
+			width: 340px;
+			margin:-9px;
+			height: auto; // Maintain aspect ratio
+		}
+	}
+	.pageScrollLinksWrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 5vh;
+		.pageScrollLinksList {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			list-style: none;
+			width: 100%; // Adjust width
+			text-align: center;
+			.pageScrollLinksItemComics,
+			.pageScrollLinksItemColabs,
+			.pageScrollLinksItemDesign,
+			.pageScrollLinksItemPainting,
+			.pageScrollLinksItemDrawing,
+			.pageScrollLinksItem {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				cursor: pointer;
+				padding-left: 10px;
+				padding-right: 10px;
+				p::after {
+					content: " ";
+					display: block;
+					height: 0.3em;
+					border-radius: 10px;
+				}
+			}
+			.pageScrollLinksItemComics {
+				p::after {
+					width: 4em;
+					background-color: #4D4849;
+				}
+			}
+			.pageScrollLinksItemColabs {
+				p::after {
+					width: 4em;
+					background-color: #4D4849;
+				}
+			}
+			.pageScrollLinksItemDesign {
+				p::after {
+					width: 4em;
+					background-color: #4D4849;
+				}
+			}
+			.pageScrollLinksItemPainting {
+				p::after {
+					width: 4em;
+					background-color: #4D4849;
+				}
+			}
+			.pageScrollLinksItemDrawing {
+				p::after {
+					width: 4em;
+					background-color: #4D4849;
+				}
+			}
+		}
+	}
+	.pageScrollLinks2Wrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 1vh;
+		.pageScrollLinksList2 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			list-style: none;
+			width: 100%; // Adjust width
+			text-align: center;
+			.pageScrollLinksItemPodcast,
+			.pageScrollLinksItemMusic, 
+			.pageScrollLinksItem {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				cursor: pointer;
+				padding-left: 10px;
+				padding-right: 10px;
+				p::after {
+					content: " ";
+					display: block;
+					height: 0.3em;
+					border-radius: 10px;
+				}
+			}
+			.pageScrollLinksItemMusic {
+				p::after {
+					width: 4em;
+					background-color: #4D4849;
+				}
+			}
+			.pageScrollLinksItemPodcast {
+				p::after {
+					width: 4em;
+					background-color: #4D4849;
+				}
+			}
+		}
 	}
 }
 
