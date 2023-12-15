@@ -3,7 +3,6 @@ import { Helmet } from "react-helmet";
 
 // image imports
 import logo from "../../assets/allscherry-landing.png";
-import wonderBar from "../../assets/wonder-bar.svg";
 import linktree from "../../assets/linktree-footer.png";
 import mail from "../../assets/mail-footer.png";
 import mailchimp from "../../assets/mailchimp-footer.png";
@@ -24,7 +23,6 @@ export default function Home() {
                     <div className="slogan">
                         <h1>Feel the wonder,</h1>
                         <h1>Crave Adventure</h1>
-                        <img className="sloganImage" src={wonderBar} alt="wonder-bar" />
                     </div>
                 </div>
             </div>
