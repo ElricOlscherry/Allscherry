@@ -1,0 +1,160 @@
+// Globals, Font family, etc.
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+// Mobile-first styles
+.firstBlock {
+    @media (max-width: 768px) {
+        background-color: #FFE7E7;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 90vh;
+        width: 100%;
+        color: black;
+
+        // Logo and Slogan section
+        .logoSloganWrapper {
+            margin-bottom: 2vh;
+
+            // Logo
+            .logoWrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .mainLogo {
+                    width: 50%;
+                    height: auto; // Maintain aspect ratio
+                }
+            }
+
+            // Slogan
+            .sloganWrapper {
+                display: flex;
+                font-size: 12px;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .slogan {
+                    text-align: center;
+
+                    .sloganImage {
+                        width: 50%;
+                        height: auto; // Maintain aspect ratio
+                    }
+                }
+            }
+        }
+
+        // Selection Bar
+        .selectionBarWrapper {
+            .selectionBarList {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                width: 100%;
+                font-size: 17px;
+
+                // Individual Selection Item
+                .selectionBarItem {
+                    font-weight: bold;
+                    display: flex;
+                    justify-content: center;
+                    padding: 0 15px; // Adjust padding
+                    align-items: center;
+                    width: 100%;
+                    cursor: pointer;
+
+                    p {
+                        border-color: #8B3D45;
+                        border-radius: 3px;
+                        border-width: 0px 0px 4px 0px;
+                        border-style: solid;
+                    }
+
+                    &:hover,
+                    &.active {
+                        background-color: #FFDADA;
+                    }
+                }
+            }
+        }
+
+        // Main Text Section
+        .mainText {
+            color: white;
+            margin-top: 2vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #F16171;
+            width: 80%; // Adjust width
+            border-bottom: 10px solid #8B3D45;
+            border-radius: 20px;
+            padding: 20px;
+            font-size: 16px;
+        }
+
+        // Links Section
+        .linkWrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5vh;
+
+            .linkList {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                list-style: none;
+                width: 60%; // Adjust width
+                text-align: center;
+
+                .linkItem {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    cursor: pointer;
+
+                    img {
+                        width: 50%;
+                        height: auto; // Maintain aspect ratio
+                        scale: 1.2;
+                    }
+                }
+            }
+        }
+
+        // See More Section
+        .seeMoreWrapper {
+            margin-top: 20px;
+
+            .seeMore,
+            .seeMoreArrow {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                    width: 50%;
+                    height: auto; // Maintain aspect ratio
+                }
+            }
+
+            .seeMore {
+                font-size: 12px;
+            }
+        }
+    }
+}
