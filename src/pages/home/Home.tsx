@@ -7,7 +7,8 @@ import linktree from "../../assets/linktree-footer.png";
 import mail from "../../assets/mail-footer.png";
 import mailchimp from "../../assets/mailchimp-footer.png";
 import downArrow from "../../assets/downArrow.svg";
-
+import eric from "../../assets/eric.png";
+import ericBubble from "../../assets/eric-bubbles.png";
 export default function Home() {
   return (
     <div className="home">
@@ -51,6 +52,30 @@ export default function Home() {
                 </div>
                 <div className="seeMoreArrow">
                     <img src={downArrow}></img>
+                </div>
+            </div>
+            <div className="ericWrapper">
+                <div className="eric">
+                    <img src={eric} alt="Eric" className="ericImg" />
+                </div>
+            </div>
+            <div className="ericBubbleWrapper">
+                <div className="ericBubble">
+                    <img src={ericBubble} alt="Eric" className="ericBubbleImg" />
+                </div>
+            </div>
+
+            <div className="expandedInfoWrapper">
+                <div className="expandedInfoText1">
+                    <p>Welcome to a world of possibility</p>
+                    <p><br/>My name is Eric Olcsvary, a 23 year old artist with a passion to create things,
+                            ranging from logos to websites, music and comic books.
+                    </p>
+                    <p><br /> But enough about me, let's talk about you, and why you're here!</p>
+                </div>
+                <div className="expandedInfoText2">
+                    <p>Scrolling down you will see a list of my favorite projects I've worked on, ones that I'm sure will make you smile.</p>
+                    <p><br/>If you have any questions, or wish to work with me on a collaborative project, shoot me an email!</p>
                 </div>
             </div>
         </div>
