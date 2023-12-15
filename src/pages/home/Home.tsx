@@ -1,5 +1,14 @@
 import "./Home.scss";
 import { Helmet } from "react-helmet";
+
+// image imports
+import logo from "../../assets/allscherry-landing.png";
+import wonderBar from "../../assets/wonder-bar.svg";
+import linktree from "../../assets/linktree-footer.png";
+import mail from "../../assets/mail-footer.png";
+import mailchimp from "../../assets/mailchimp-footer.png";
+import downArrow from "../../assets/downArrow.svg";
+
 export default function Home() {
   return (
     <div className="home">
@@ -9,13 +18,13 @@ export default function Home() {
         <div className="firstBlock">
             <div className="logoSloganWrapper">
                 <div className="logoWrapper">
-                    <img className="mainLogo" src="/src/assets/allscherry-landing.png" alt="logo" />
+                    <img className="mainLogo" src={logo} alt="logo" />
                 </div>
                 <div className="sloganWrapper">
                     <div className="slogan">
                         <h1>Feel the wonder,</h1>
                         <h1>Crave Adventure</h1>
-                        <img className="sloganImage" src="/src/assets/wonder-bar.svg" alt="wonder-bar" />
+                        <img className="sloganImage" src={wonderBar} alt="wonder-bar" />
                     </div>
                 </div>
             </div>
@@ -33,9 +42,9 @@ export default function Home() {
             </div>
             <div className="linkWrapper">
                 <ul className="linkList">
-                    <li className="linkItem"><a href="https://linktr.ee/eolcsvary_art/" target="_blank"><img src="/src/assets/linktree-footer.png"></img></a></li>
-                    <li className="linkItem"><a href="mailto:eric@eolcsvaryart.com" target="_blank"><img src="/src/assets/mail-footer.png"></img></a></li>
-                    <li className="linkItem"><a href="#" target="_blank"><img src="/src/assets/mailchimp-footer.png"></img></a></li>
+                    <li className="linkItem"><a href="https://linktr.ee/eolcsvary_art/" target="_blank"><img src={linktree}></img></a></li>
+                    <li className="linkItem"><a href="mailto:eric@eolcsvaryart.com" target="_blank"><img src={mail}></img></a></li>
+                    <li className="linkItem"><a href="#" target="_blank"><img src={mailchimp}></img></a></li>
                 </ul>
             </div>
             <div className="seeMoreWrapper">
@@ -43,7 +52,7 @@ export default function Home() {
                     <p>Scroll Down!</p>
                 </div>
                 <div className="seeMoreArrow">
-                    <img src="/src/assets/downArrow.svg"></img>
+                    <img src={downArrow}></img>
                 </div>
             </div>
         </div>
