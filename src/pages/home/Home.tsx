@@ -1,6 +1,6 @@
 import "./Home.scss";
 import { Helmet } from "react-helmet";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link  } from "react-scroll";
 
 
 // image imports
