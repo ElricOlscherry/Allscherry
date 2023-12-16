@@ -1,5 +1,7 @@
 import "./Home.scss";
 import { Helmet } from "react-helmet";
+import { Link, animateScroll as scroll } from "react-scroll";
+
 
 // image imports
 import logo from "../../assets/allscherry-landing.png";
@@ -16,6 +18,16 @@ export default function Home() {
         <Helmet>
             <title>AllsCherry - Home</title>
         </Helmet>
+        <div className="backToTop">
+            <Link
+                to="firstBlock"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+            ><img src={mailchimp} alt="BackToTop" />
+            </Link>
+        </div>
         <div className="firstBlock">
             <div className="logoSloganWrapper">
                 <div className="logoWrapper">
@@ -96,6 +108,13 @@ export default function Home() {
                         <li className="pageScrollLinksItemMusic"><p>Music</p></li>
                     </ul>
                 </div>
+            </div>
+            <div className="stripeDivider">
+                <div className="dark"></div>
+                <div className="background"></div>
+                <div className="light"></div>
+                <div className="background"></div>
+                <div className="lighter"></div>
             </div>
         </div>
     </div>
