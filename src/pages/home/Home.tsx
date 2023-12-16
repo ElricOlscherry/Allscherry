@@ -12,6 +12,7 @@ import downArrow from "../../assets/downArrow.svg";
 import eric from "../../assets/eric.png";
 import ericBubble from "../../assets/eric-bubbles.png";
 import bottomBubbles from "../../assets/bottom-bubbles.png";
+import backToTop from "../../assets/back-to-top.png";
 export default function Home() {
   return (
     <div className="home">
@@ -25,7 +26,7 @@ export default function Home() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-            ><img src={mailchimp} alt="BackToTop" />
+            ><img src={backToTop} alt="BackToTop" />
             </Link>
         </div>
         <div className="firstBlock">
