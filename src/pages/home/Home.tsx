@@ -78,45 +78,44 @@ export default function Home() {
                     <img src={ericBubble} alt="Eric" className="ericBubbleImg" />
                 </div>
             </div>
-
-            <div className="expandedInfoWrapper">
-                <div className="expandedInfoText1">
-                    <p>Welcome to a world of possibility</p>
-                    <p><br/>My name is Eric Olcsvary, a 23 year old artist with a passion to create things,
-                            ranging from logos to websites, music and comic books.
-                    </p>
-                    <p><br /> But enough about me, let's talk about you, and why you're here!</p>
-                </div>
-                <div className="expandedInfoText2">
-                    <p>Scrolling down you will see a list of my favorite projects I've worked on, ones that I'm sure will make you smile.</p>
-                    <p><br/>If you have any questions, or wish to work with me on a collaborative project, shoot me an email!</p>
-                </div>
-                <div className="bottomBubbles">
-                    <img src={bottomBubbles} alt="bottom bubbles" className="bottomBubblesImg" />
-                </div>
-                <div className="pageScrollLinksWrapper">
-                    <ul className="pageScrollLinksList">
-                        <li className="pageScrollLinksItemComics"><p>Comics</p></li>
-                        <li className="pageScrollLinksItemColabs"><p>Colabs</p></li>
-                        <li className="pageScrollLinksItemDesign"><p>Design</p></li>
-                        <li className="pageScrollLinksItemPainting"><p>Painting</p></li>
-                        <li className="pageScrollLinksItemDrawing"><p>Drawing</p></li>
-                    </ul>
-                </div>
-                <div className="pageScrollLinks2Wrapper">
-                    <ul className="pageScrollLinksList2">
-                        <li className="pageScrollLinksItemPodcast"><p>Podcst</p></li>
-                        <li className="pageScrollLinksItemMusic"><p>Music</p></li>
-                    </ul>
-                </div>
+        </div>
+        <div className="expandedInfoWrapper">
+            <div className="expandedInfoText1">
+                <p>Welcome to a world of possibility</p>
+                <p><br/>My name is Eric Olcsvary, a 23 year old artist with a passion to create things,
+                        ranging from logos to websites, music and comic books.
+                </p>
+                <p><br /> But enough about me, let's talk about you, and why you're here!</p>
             </div>
-            <div className="stripeDivider">
-                <div className="dark"></div>
-                <div className="background"></div>
-                <div className="light"></div>
-                <div className="background"></div>
-                <div className="lighter"></div>
+            <div className="expandedInfoText2">
+                <p>Scrolling down you will see a list of my favorite projects I've worked on, ones that I'm sure will make you smile.</p>
+                <p><br/>If you have any questions, or wish to work with me on a collaborative project, shoot me an email!</p>
             </div>
+            <div className="bottomBubbles">
+                <img src={bottomBubbles} alt="bottom bubbles" className="bottomBubblesImg" />
+            </div>
+            <div className="pageScrollLinksWrapper">
+                <ul className="pageScrollLinksList">
+                    <li className="pageScrollLinksItemComics"><p>Comics</p></li>
+                    <li className="pageScrollLinksItemColabs"><p>Colabs</p></li>
+                    <li className="pageScrollLinksItemDesign"><p>Design</p></li>
+                    <li className="pageScrollLinksItemPainting"><p>Painting</p></li>
+                    <li className="pageScrollLinksItemDrawing"><p>Drawing</p></li>
+                </ul>
+            </div>
+            <div className="pageScrollLinks2Wrapper">
+                <ul className="pageScrollLinksList2">
+                    <li className="pageScrollLinksItemPodcast"><p>Podcst</p></li>
+                    <li className="pageScrollLinksItemMusic"><p>Music</p></li>
+                </ul>
+            </div>
+        </div>
+        <div className="stripeDivider">
+            <div className="dark"></div>
+            <div className="background"></div>
+            <div className="light"></div>
+            <div className="background"></div>
+            <div className="lighter"></div>
         </div>
     </div>
   );
