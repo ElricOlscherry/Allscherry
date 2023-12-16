@@ -13,6 +13,11 @@ import eric from "../../assets/eric.png";
 import ericBubble from "../../assets/eric-bubbles.png";
 import bottomBubbles from "../../assets/bottom-bubbles.png";
 import backToTop from "../../assets/back-to-top.png";
+import cover from "../../assets/Cover.png";
+import coverRGB from "../../assets/cover-rgb.jpg";
+import wendyAndTheSptrite from "../../assets/wendy-and-the-sprite-with-logo.png";
+import page1Cover from "../../assets/page-1-cover-with-logo.png";
+
 export default function Home() {
   return (
     <div className="home">
@@ -117,6 +122,24 @@ export default function Home() {
             <div className="background"></div>
             <div className="lighter"></div>
         </div>
+        <div className="comicWrapper">
+                <div className="leftCover">
+                    <div className="wendyAndTheSprite">
+                        <img src={wendyAndTheSptrite} alt="cover" className="wendyAndTheSpriteImg" />
+                    </div>
+                    <div className="page1Cover">
+                        <img src={page1Cover} alt="cover" className="page1CoverImg" />
+                    </div>
+                </div>
+                <div className="rightCover">
+                    <div className="cover">
+                        <img src={cover} alt="cover" className="coverImg" />
+                    </div>
+                    <div className="coverRGB">
+                        <img src={coverRGB} alt="cover" className="coverRGBImg" />
+                    </div>
+                </div>
+            </div>
     </div>
   );
 }
