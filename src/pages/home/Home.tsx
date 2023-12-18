@@ -51,7 +51,7 @@ export default function Home() {
             <div className="backToTop">
                 {showBackToTop && (
                     <Link
-                        to="pageScrollLinksWrapper"
+                        to="expandedInfoText1"
                         spy={true}
                         smooth={true}
                         offset={-70}
