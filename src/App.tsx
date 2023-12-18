@@ -1,6 +1,6 @@
 import './App.css'
-import Home from './pages/home/Home'
 import NotFound from './pages/404/NotFound'
+import Home from './pages/home/Home'
 import { Route, Routes } from "react-router-dom";
 
 export default function App() {
