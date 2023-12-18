@@ -246,7 +246,7 @@ export default function Home() {
                     <img src={uvfs} alt="uvfs" className="uvfsImg" />
                 </div>
                 <div className="uvfsText">
-                    <h2>UVFS</h2>
+                    <h2>UVFS x AllsCherry</h2>
                     <br />
                     <p>UVFS is a podcast I host with my friends, where we talk about movies, games, and other media. We have a lot of fun, and we hope you do too!</p>
                 </div>
