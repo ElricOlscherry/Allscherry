@@ -75,7 +75,7 @@ export default function Home() {
                 </div>
                 <div className="selectionBarWrapper">
                     <ul className="selectionBarList">
-                        <li className="selectionBarItemShop"><p>Shop</p></li>
+                        <li className="selectionBarItemShop"><a href="https://www.etsy.com/ca/shop/OlcsvaryCartoons?ref=seller-platform-mcnav" target="_blank"><p>Shop</p></a></li>
                         <li className="selectionBarItemProject">
                             <Link
                                 to="pageScrollLinksWrapper"
@@ -207,9 +207,11 @@ export default function Home() {
                     <p>The center of AllsCherry, and it's original purpose, was that od creating indie comics! Wendy and the Sprite, and Overflow, are my two main series. They are for all ages, with fun pictures and a large plot!</p>
                 </div>
                 <div className="comicBtnWrapper">
-                    <button className="comicBtn">
-                        Check them out here!
-                    </button>
+                    <a href="https://www.etsy.com/ca/shop/OlcsvaryCartoons?ref=seller-platform-mcnav&section_id=34381204" target="_blank">
+                        <button className="comicBtn">
+                            Check them out here!
+                        </button>
+                    </a>
                 </div>
             </div>
             <div className="stripeDivider">
@@ -302,9 +304,11 @@ export default function Home() {
                     <p>Season 1 of this podcast just ended! The show is about our lives as growing young adults in a world that almost seems to push art and critical thinking to the sidelines. Sharing our own growth and experiences, the pod is meant to show that nobody is perfect, and that fact is beautiful.</p>
                 </div>
                 <div className="crowOnAPerchBtnWrapper">
-                    <button className="crowOnAPerchBtn">
-                        Now on Spotify!
-                    </button>
+                    <a href="https://open.spotify.com/show/3ibtTwslpMAqkeZCNL4fLN?si=71568c0821ea46e0&nd=1&dlsi=48cdd0321f1840d3" target="_blank">
+                        <button className="crowOnAPerchBtn">
+                            Now on Spotify!
+                        </button>
+                    </a>
                 </div>
                 <div className="setDrawWrapper">
                     <img src={setDraw} alt="comic" className="setDrawImg" />
