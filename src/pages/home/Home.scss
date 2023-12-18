@@ -419,7 +419,7 @@
 	}
 }
 .comicWrapper {
-	background: linear-gradient(to bottom, #DCA3A3 30%, #FFE7E7 40%); /* Go towards the bottom, Cover #ddd for 50%, Cover #9a8d60 for the other half */
+	background: linear-gradient(to bottom, #DCA3A3 40%, #FFE7E7 100%); /* Go towards the bottom, Cover #ddd for 50%, Cover #9a8d60 for the other half */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -539,7 +539,7 @@
 	}
 }
 .anthologyWrapper {
-	background: linear-gradient(to bottom, #DCA3A3 30%, #FFE7E7 40%); /* Go towards the bottom, Cover #ddd for 50%, Cover #9a8d60 for the other half */
+	background: linear-gradient(to bottom, #DCA3A3 30%, #FFE7E7 70%); /* Go towards the bottom, Cover #ddd for 50%, Cover #9a8d60 for the other half */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -602,7 +602,7 @@
 }
 
 .uvfsWrapper {
-	background: linear-gradient(to bottom, #DCA3A3 30%, #FFE7E7 40%); /* Go towards the bottom, Cover #ddd for 50%, Cover #9a8d60 for the other half */
+	background: linear-gradient(to bottom, #DCA3A3 10%, #FFE7E7 80%); /* Go towards the bottom, Cover #ddd for 50%, Cover #9a8d60 for the other half */
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -1058,7 +1058,7 @@
 		height: auto;
 		width: 100%;
 		background-color: #99C994;
-		padding-top: 30px;
+		padding-top: 50px;
 	}
 	.bar1 {
 		width: 100%;
