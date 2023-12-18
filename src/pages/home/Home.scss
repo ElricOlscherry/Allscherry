@@ -239,7 +239,7 @@
 	height: auto;
 	width: 100%;
 	color: white;
-	padding-top: 10px;
+	padding-top: 40px;
 	.expandedInfoText1 {
 		display: flex;
 		flex-direction: column;
@@ -467,6 +467,7 @@
 	height: auto;
 	width: auto;
 	color: black;
+	padding-bottom:20px;
 	.comicText {
 		color: white;
 		margin-top: 3vh;
@@ -538,6 +539,7 @@
 	// column 
 	font-weight: bold;
 	flex-direction: column;
+	padding-bottom: 20px;
 	.anthologyImgWrapper {
 		display: flex;
 		justify-content: center;

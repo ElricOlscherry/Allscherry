@@ -51,7 +51,7 @@ export default function Home() {
             <div className="backToTop">
                 {showBackToTop && (
                     <Link
-                        to="firstBlock"
+                        to="pageScrollLinksWrapper"
                         spy={true}
                         smooth={true}
                         offset={-70}
@@ -212,14 +212,6 @@ export default function Home() {
                     </button>
                 </div>
             </div>
-            <div className="seeMoreWrapper2">
-                <div className="seeMore">
-                    <p>Scroll Down!</p>
-                </div>
-                <div className="seeMoreArrow">
-                    <img src={downArrow}></img>
-                </div>
-            </div>
             <div className="stripeDivider">
                 <div className="dark"></div>
                 <div className="background"></div>
@@ -240,14 +232,6 @@ export default function Home() {
                     <button className="anthologyBtn">
                         Check them out here!
                     </button>
-                </div>
-            </div>
-            <div className="seeMoreWrapper2">
-                <div className="seeMore">
-                    <p>Scroll Down!</p>
-                </div>
-                <div className="seeMoreArrow">
-                    <img src={downArrow}></img>
                 </div>
             </div>
             <div className="stripeDivider">
