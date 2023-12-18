@@ -1,9 +1,14 @@
 // Globals, Font family, etc.
+@font-face {
+	font-family: JejuGothic;
+	src: url(../../assets/fonts/JejuGothic-Regular.ttf);
+}
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	font-family: 'Roboto', sans-serif;
+	font-family: JejuGothic; // import ttf
+	
     
 }
 
@@ -255,7 +260,7 @@
 		justify-content: center;
 		align-items: center;
 		text-align: center;
-		background-color: #8B3D45;
+		background-color: #A85E65;
 		width: 350px; // Adjust width
 		border-bottom: 10px solid #62373B;
 		border-radius: 15px;
@@ -397,12 +402,12 @@
 	.light {
 
 		width: 100%;
-		background-color: #884c52;
+		background-color: #A85E65;
 		height: 15px;
 	}
 	.lighter {
 		width: 100%;
-		background-color: #8b6d6d;
+		background-color: #C0777E;
 		height: 10px;
 	}
 }
@@ -487,20 +492,20 @@
 			justify-content: center;
 			align-items: center;
 			cursor: pointer;
-			padding: 20px;
+			padding: 10px 20px 10px 20px;
 			background-color: #8B3D45;
 			color: white;
 			border-radius: 10px;
 			border-width: 0px;
-			font-size: 1.3em;
-			border-bottom: 10px solid #62373B;
+			font-size: 1em;
+			border-bottom: 5px solid #F16171;
 			&:hover {
 				background-color: #62373B;
 			}
 			//simulate a pess
 			&:active {
 				border-bottom: 0px solid #62373B;
-				margin-top: 10px;
+				margin-top: 5px;
 			}
 		}
 	}
@@ -524,4 +529,129 @@
 		font-size: 12px;
 		font-weight: bold;
 	}
+}
+.anthologyWrapper {
+	background: linear-gradient(to bottom, #DCA3A3 30%, #FFE7E7 40%); /* Go towards the bottom, Cover #ddd for 50%, Cover #9a8d60 for the other half */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// column 
+	font-weight: bold;
+	flex-direction: column;
+	.anthologyImgWrapper {
+		display: flex;
+		justify-content: center;
+		margin-top: 30px;
+
+		.anthologyImg {
+			height: auto;			
+			width: 300px;
+		}
+	}
+	.anthologyText {
+		color: white;
+		margin-top: 3vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background-color: #798FAE;
+		width: 350px; // Adjust width
+		border-bottom: 10px solid #4C5C71;
+		border-radius: 15px;
+		padding: 20px;
+		font-size: 1em;
+	}
+	.anthologyBtnWrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 5vh;
+		.anthologyBtn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			padding: 10px 20px 10px 20px;
+			background-color: #4C5C71;
+			color: white;
+			border-radius: 10px;
+			border-width: 0px;
+			font-size: 1em;
+			border-bottom: 5px solid #798FAE;
+			&:hover {
+				background-color: #2B2B2B;
+			}
+			//simulate a pess
+			&:active {
+				border-bottom: 0px solid #2B2B2B;
+				margin-top: 5px;
+			}
+		}
+	}
+}
+
+.uvfsWrapper {
+	background: linear-gradient(to bottom, #DCA3A3 30%, #FFE7E7 40%); /* Go towards the bottom, Cover #ddd for 50%, Cover #9a8d60 for the other half */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	// column 
+	font-weight: bold;
+	flex-direction: column;
+	.uvfsImgWrapper {
+		display: flex;
+		justify-content: center;
+		margin-top: 30px;
+
+		.uvfsImg {
+			height: auto;			
+			width: 300px;
+		}
+	}
+	.uvfsText {
+		color: white;
+		margin-top: 3vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background-color: #AD2F3D;
+		width: 350px; // Adjust width
+		border-bottom: 10px solid #373737;
+		border-radius: 15px;
+		padding: 20px;
+		font-size: 1em;
+	}
+	.uvfsBtnWrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 5vh;
+		.uvfsBtn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			padding: 10px 20px 10px 20px;
+			background-color: #373737;
+			color: white;
+			border-radius: 10px;
+			border-width: 0px;
+			font-size: 1em;
+			border-bottom: 5px solid #AD2F3D;
+			&:hover {
+				background-color: #2B2B2B;
+			}
+			//simulate a pess
+			&:active {
+				border-bottom: 0px solid #2B2B2B;
+				margin-top: 5px;
+			}
+		}
+	}
+
+
 }

@@ -4,20 +4,21 @@ import { Link  } from "react-scroll";
 
 
 // image imports
-import logo from "../../assets/allscherry-landing.png";
-import linktree from "../../assets/linktree-footer.png";
-import mail from "../../assets/mail-footer.png";
-import mailchimp from "../../assets/mailchimp-footer.png";
-import downArrow from "../../assets/downArrow.svg";
-import eric from "../../assets/eric.png";
-import ericBubble from "../../assets/eric-bubbles.png";
-import bottomBubbles from "../../assets/bottom-bubbles.png";
-import backToTop from "../../assets/back-to-top.png";
-import cover from "../../assets/Cover.png";
-import coverRGB from "../../assets/cover-rgb.jpg";
-import wendyAndTheSptrite from "../../assets/wendy-and-the-sprite-with-logo.png";
-import page1Cover from "../../assets/page-1-cover-with-logo.png";
-
+import logo from "../../assets/img/allscherry-landing.png";
+import linktree from "../../assets/img/linktree-footer.png";
+import mail from "../../assets/img/mail-footer.png";
+import mailchimp from "../../assets/img/mailchimp-footer.png";
+import downArrow from "../../assets/img/downArrow.svg";
+import eric from "../../assets/img/eric.png";
+import ericBubble from "../../assets/img/eric-bubbles.png";
+import bottomBubbles from "../../assets/img/bottom-bubbles.png";
+import backToTop from "../../assets/img/back-to-top.png";
+import cover from "../../assets/img/Cover.png";
+import coverRGB from "../../assets/img/cover-rgb.jpg";
+import wendyAndTheSptrite from "../../assets/img/wendy-and-the-sprite-with-logo.png";
+import page1Cover from "../../assets/img/page-1-cover-with-logo.png";
+import anthology from "../../assets/img/anthology.png";
+import uvfs from "../../assets/img/uvfs.png";
 export default function Home() {
     return (
         <div className="home">
@@ -118,7 +119,7 @@ export default function Home() {
                 </div>
                 <div className="pageScrollLinks2Wrapper">
                     <ul className="pageScrollLinksList2">
-                        <li className="pageScrollLinksItemPodcast"><p>Podcst</p></li>
+                        <li className="pageScrollLinksItemPodcast"><p>Podcast</p></li>
                         <li className="pageScrollLinksItemMusic"><p>Music</p></li>
                     </ul>
                 </div>
@@ -174,6 +175,51 @@ export default function Home() {
                 <div className="light"></div>
                 <div className="background"></div>
                 <div className="lighter"></div>
+            </div>
+            <div className="anthologyWrapper">
+                <div className="anthologyImgWrapper">
+                    <img src={anthology} alt="anthology" className="anthologyImg" />
+                </div>
+                <div className="anthologyText">
+                    <h2>The AllsCherry Anthology</h2>
+                    <br />
+                    <p>Bringing together a collection of 8 unique stories all by a different artist, the AllsCherry Anthology’s goal is to unite creators to make something special, and to show off our talents! The first of many to come, this book is the embodiment of AllsCherry’s goal!</p>
+                </div>
+                <div className="anthologyBtnWrapper">
+                    <button className="anthologyBtn">
+                        Check them out here!
+                    </button>
+                </div>
+            </div>
+            <div className="seeMoreWrapper2">
+                <div className="seeMore">
+                    <p>Scroll Down!</p>
+                </div>
+                <div className="seeMoreArrow">
+                    <img src={downArrow}></img>
+                </div>
+            </div>
+            <div className="stripeDivider">
+                <div className="dark"></div>
+                <div className="background"></div>
+                <div className="light"></div>
+                <div className="background"></div>
+                <div className="lighter"></div>
+            </div>
+            <div className="uvfsWrapper">
+                <div className="uvfsImgWrapper">
+                    <img src={uvfs} alt="uvfs" className="uvfsImg" />
+                </div>
+                <div className="uvfsText">
+                    <h2>UVFS</h2>
+                    <br />
+                    <p>UVFS is a podcast I host with my friends, where we talk about movies, games, and other media. We have a lot of fun, and we hope you do too!</p>
+                </div>
+                <div className="uvfsBtnWrapper">
+                    <button className="uvfsBtn">
+                        Check it out here!
+                    </button>
+                </div>
             </div>
         </div>
   );
