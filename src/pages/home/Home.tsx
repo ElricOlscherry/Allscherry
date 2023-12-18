@@ -27,7 +27,10 @@ import allscherrycomics from "../../assets/img/allscherrycomics.png";
 import crowOnAPerch from "../../assets/img/crowOnAPerch.png";
 import setDraw from "../../assets/img/setDraw.jpeg";
 import crowLogo from "../../assets/img/crowLogo.png";
-
+import puzzle1 from "../../assets/img/puzzle1.jpeg";
+import puzzle2 from "../../assets/img/puzzle2.jpeg";
+import theSpinning from "../../assets/img/theSpinning.png";
+import lookingBack from "../../assets/img/lookingBack.png";
 export default function Home() {
     const [showBackToTop, setShowBackToTop] = useState(false);
 
@@ -283,6 +286,48 @@ export default function Home() {
                 </div>
                 <div className="allsCherryComicsLogoWrapper">
                     <img src={allscherrycomics} alt="logo" className="allsCherryComicsLogoImg" />
+                </div>
+            </div>
+            <div className="artWrapper">
+                <div className="stripeDivider4">
+                    <div className="background"></div>
+                    <div className="light"></div>
+                    <div className="background"></div>
+                    <div className="lighter"></div>
+                    <div className="background2"></div>
+                    <div className="lightest"></div>
+                </div>
+                <div className="puzzleImgWrapper">
+                    <img src={puzzle1} alt="comic" className="puzzleImg" />
+                </div>
+                <div className="puzzleText">
+                    <h3>The Puzzle Series</h3>
+                    <br />
+                    <p>Some of my earlier work in “my career, and yet, some of my favorites.</p>
+                    <br />
+                    <p>The Distorted Puzzle” and “Spatial Division”, respectfully, are my biggest paintings. The first being 72” tall, and the second being 58” x 48” in size.</p>
+                    <br />
+                    <p>Both representing concepts beyond the canvas, being painted on cut up masonite, exploring Artist’s Block, acceptance and banishment, as well as Night Terrors and safe spaces; these paintings are very representative of my journey. </p>
+                </div>
+                <div className="pinkBar"></div>
+                <div className="puzzleImgWrapper2">
+                    <img src={puzzle2} alt="comic" className="puzzleImg2" />
+                </div>
+                <div className="paintingNightTerrorWrapper">
+                    <div className="darkBar"></div>
+                    <div className="darkBar"></div>
+                    <div className="lighterBar"></div>
+                    <div className="darkBar"></div>
+                    <div className="spinningImgWrapper">
+                        <img src={theSpinning} alt="comic" className="spinningImg" />
+                    </div>
+                    <div className="lookingBackImgWrapper">
+                        <img src={lookingBack} alt="comic" className="lookingBackImg" />
+                    </div>
+                    <div className="paintingNightTerrorText">
+                        <h3>Painting Night Terrors</h3>
+                        <p>Some of my favorite early paintings are my Night Terror paintings. Suffering from night terrors for many years as a child, these simple paintings to one person, is a personal hell to another. It made my love for painting and expression that much stronger.</p>
+                    </div>
                 </div>
             </div>
             <div className="crowOnAPerchWrapper">
