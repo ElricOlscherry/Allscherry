@@ -332,7 +332,3 @@ export default function Home() {
         </div>
   );
 }
-
-function pop(this: Window, ev: Event) {
-    throw new Error("Function not implemented.");
-}
