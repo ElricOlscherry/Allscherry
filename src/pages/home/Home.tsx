@@ -1,7 +1,7 @@
 import "./Home.scss";
 import { Helmet } from "react-helmet";
 import { Link  } from "react-scroll";
-
+import { useEffect, useState } from "react";
 
 // image imports
 import logo from "../../assets/img/allscherry-landing.png";
@@ -19,21 +19,47 @@ import wendyAndTheSptrite from "../../assets/img/wendy-and-the-sprite-with-logo.
 import page1Cover from "../../assets/img/page-1-cover-with-logo.png";
 import anthology from "../../assets/img/anthology.png";
 import uvfs from "../../assets/img/uvfs.png";
+import comicsLogo from "../../assets/img/comicsLogo.png";
+import comicBlue from "../../assets/img/comicBlue.png";
+import comicGrey from "../../assets/img/comicGrey.png";
+import comicRed from "../../assets/img/comicRed.png";
+import allscherrycomics from "../../assets/img/allscherrycomics.png";
+import crowOnAPerch from "../../assets/img/crowOnAPerch.png";
+import setDraw from "../../assets/img/setDraw.jpeg";
+import crowLogo from "../../assets/img/crowLogo.png";
+
 export default function Home() {
+    const [showBackToTop, setShowBackToTop] = useState(false);
+
+    useEffect(() => {
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+  
+    const handleScroll = () => {
+      if (window.scrollY > 1500) {
+        setShowBackToTop(true);
+      } else {
+        setShowBackToTop(false);
+      }
+    };
     return (
         <div className="home">
             <Helmet>
                 <title>AllsCherry - Home</title>
             </Helmet>
             <div className="backToTop">
-                <Link
-                    to="expandedInfoWrapper"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    duration={500}
-                ><img src={backToTop} alt="BackToTop" />
-                </Link>
+                {showBackToTop && (
+                    <Link
+                        to="firstBlock"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        duration={500}
+                    >
+                        <img src={backToTop}  alt="back to top" className="backToTopImg" />
+                    </Link>
+                )}
             </div>
             <div className="firstBlock">
                 <div className="logoSloganWrapper">
@@ -50,7 +76,16 @@ export default function Home() {
                 <div className="selectionBarWrapper">
                     <ul className="selectionBarList">
                         <li className="selectionBarItemShop"><p>Shop</p></li>
-                        <li className="selectionBarItemProject"><p>Projects</p></li>
+                        <li className="selectionBarItemProject">
+                            <Link
+                                to="pageScrollLinksWrapper"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}>
+                            <p>Projects</p>
+                            </Link>
+                        </li>
                         <li className="selectionBarItemContact"><p>Contact</p></li>
                     </ul>
                 </div>
@@ -104,15 +139,31 @@ export default function Home() {
                     <ul className="pageScrollLinksList">
                         <li className="pageScrollLinksItemComics">
                             <Link
-                                to="comicTextWrapper"
+                                to="comicWrapper"
                                 spy={true}
                                 smooth={true}
                                 offset={-70}
                                 duration={500}
                             ><p>Comics</p></Link>
                         </li>
-                        <li className="pageScrollLinksItemColabs"><p>Colabs</p></li>
-                        <li className="pageScrollLinksItemDesign"><p>Design</p></li>
+                        <li className="pageScrollLinksItemColabs">
+                            <Link 
+                                to="anthologyImgWrapper"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            ><p>Colabs</p></Link>
+                        </li>
+                        <li className="pageScrollLinksItemDesign">
+                            <Link
+                                to="comicsLogo"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            ><p>Design</p></Link>
+                        </li>
                         <li className="pageScrollLinksItemPainting"><p>Painting</p></li>
                         <li className="pageScrollLinksItemDrawing"><p>Drawing</p></li>
                     </ul>
@@ -221,7 +272,67 @@ export default function Home() {
                     </button>
                 </div>
             </div>
+            <div className="comicsInfo">
+                <div className="stripeDivider2">
+                    <div className="dark"></div>
+                    <div className="background"></div>
+                    <div className="light"></div>
+                    <div className="background"></div>
+                    <div className="lighter"></div>
+                    <div className="background"></div>
+                    <div className="lightest"></div>
+                </div>
+                <div className="comicsLogo">
+                    <img src={comicsLogo} alt="logo" className="comicsLogoImg" />
+                </div>
+                <div className="comicsText">
+                    <h3>AllsCherry, a symbol of community and my work as an artist</h3>
+                    <br />
+                    <p>The logo is a play on my last name, Olcsvary, and an old nickname from high school. Originally a publishing label for my comics, it has now become something more; an opportunity to create not just for myself, but with others!</p>
+                </div>
+                <div className="comicImgWrapper">
+                    <img src={comicGrey} alt="comic" className="comicImgGrey" />
+                    <img src={comicRed} alt="comic" className="comicImgRed" />
+                    <img src={comicBlue} alt="comic" className="comicImgBlue" />
+                </div>
+                <div className="allsCherryComicsLogoWrapper">
+                    <img src={allscherrycomics} alt="logo" className="allsCherryComicsLogoImg" />
+                </div>
+            </div>
+            <div className="crowOnAPerchWrapper">
+                <div className="stripeDivider3">
+                    <div className="dark"></div>
+                    <div className="background"></div>
+                    <div className="light"></div>
+                    <div className="background"></div>
+                    <div className="lighter"></div>
+                    <div className="background"></div>
+                    <div className="lightest"></div>
+                </div>
+                <div className="crowOnAPerchImgWrapper">
+                    <img src={crowOnAPerch} alt="comic" className="crowOnAPerchImg" />
+                </div>
+                <div className="crowOnAPerchText">
+                    <h3>Crow on a Perch</h3>
+                    <br />
+                    <p>Season 1 of this podcast just ended! The show is about our lives as growing young adults in a world that almost seems to push art and critical thinking to the sidelines. Sharing our own growth and experiences, the pod is meant to show that nobody is perfect, and that fact is beautiful.</p>
+                </div>
+                <div className="crowOnAPerchBtnWrapper">
+                    <button className="crowOnAPerchBtn">
+                        Now on Spotify!
+                    </button>
+                </div>
+                <div className="setDrawWrapper">
+                    <img src={setDraw} alt="comic" className="setDrawImg" />
+                </div>
+                <div className="crowLogoWrapper">
+                    <img src={crowLogo} alt="comic" className="crowLogoImg" />
+                </div>
+            </div>
         </div>
   );
 }
 
+function pop(this: Window, ev: Event) {
+    throw new Error("Function not implemented.");
+}

@@ -112,21 +112,21 @@
 
 			.selectionBarItemShop {
 				p::after {
-					width: 5em;
+					width: 4em;
 					background-color: #3D498B;
 				}
 			}
 
 			.selectionBarItemProject {
 				p::after {
-					width: 5em;
+					width: 4em;
 					background-color: #FB8491;
 				}
 			}
 
 			.selectionBarItemContact {
 				p::after {
-					width: 5em;
+					width: 4em;
 					background-color: #4D4849;
 				}
 			}
@@ -652,6 +652,238 @@
 			}
 		}
 	}
+}
+.comicsInfo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	width: 100%;
+	background-color: #FFE7E7;
+	color: white;
+	padding-top: 10px;
+	overflow: hidden;
 
+	.stripeDivider2 {
+		width: 100%;
+		background-color: #FFE7E7;
 
+		.dark {
+			background-color: #FF9393;
+			height: 100px;
+		}
+
+		.background {
+			width: 100%;
+			background-color: #F9EDEA;
+			height: 25px;
+		}
+
+		.light {
+			width: 100%;
+			background-color: #D19D9D;
+			height: 50px;
+		}
+
+		.lighter {
+			width: 100%;
+			background-color: #999;
+			height: 30px;
+		}
+
+		.lightest {
+			width: 100%;
+			background-color: #CBC3C3;
+			height: 25px;
+		}
+	}
+
+	.comicsLogo {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: -260px;
+
+		.comicsLogoImg {
+			height: auto;
+			width: 250px;
+		}
+	}
+
+	.comicsText {
+		margin-top: 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background-color: #FFB9B9;
+		width: 350px; // Adjust width
+		border-bottom: 10px solid #FF8F8F;
+		border-radius: 15px;
+		padding: 20px;
+		color: black;
+		font-size: 1em;
+	}
+
+	.comicImgWrapper {
+		// Include 3 images, side by side
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.comicImgGrey {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: auto;
+			width: 200px;
+			margin-right: -100px;
+		}
+
+		.comicImgRed {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: auto;
+			width: 250px;
+		}
+
+		.comicImgBlue {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: auto;
+			width: 200px;
+			margin-left: -100px;
+		}
+	}
+
+	.allsCherryComicsLogoWrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		.allsCherryComicsLogoImg {
+			height: auto;
+			width: 200px;
+		}
+	}
+}
+
+.crowOnAPerchWrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	width: 100%;
+	background-color: #FFE7E7;
+	.stripeDivider3 {
+		width: 100%;
+		background-color: #FFE7E7;
+
+		.dark {
+			background-color: #99C994;
+			height: 100px;
+		}
+
+		.background {
+			width: 100%;
+			background-color: #FFE7E7;
+			height: 25px;
+		}
+
+		.light {
+			width: 100%;
+			background-color: #879885;
+			height: 50px;
+		}
+
+		.lighter {
+			width: 100%;
+			background-color: #999;
+			height: 30px;
+		}
+
+		.lightest {
+			width: 100%;
+			background-color: #CBC3C3;
+			height: 25px;
+		}
+	}
+	.crowOnAPerchImgWrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: -270px;
+
+		.crowOnAPerchImg {
+			height: auto;
+			width: 250px;
+		}
+	}
+	.crowOnAPerchText {
+		margin-top: 50px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		background-color: #6B607E;
+		width: 350px; // Adjust width
+		border-bottom: 10px solid #524568;
+		border-radius: 15px;
+		padding: 20px;
+		color: white;
+		font-size: 1em;
+	}
+	.crowOnAPerchBtnWrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 5vh;
+		.crowOnAPerchBtn {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+			padding: 10px 20px 10px 20px;
+			background-color: #3A4950;
+			color: white;
+			border-radius: 10px;
+			border-width: 0px;
+			font-size: 1em;
+			border-bottom: 5px solid #5A757C;
+			&:hover {
+				background-color: #5A757C;
+			}
+			//simulate a pess
+			&:active {
+				border-bottom: 0px solid #5A757C;
+				margin-top: 5px;
+			}
+		}
+	}
+	.setDrawWrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: 5vh;
+		.setDrawImg {
+			height: auto;
+			width: 350px;
+		}
+	}
+	.crowLogoWrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-top: -70px;
+		.crowLogoImg {
+			height: auto;
+			width: 200px;
+		}
+	}
 }
