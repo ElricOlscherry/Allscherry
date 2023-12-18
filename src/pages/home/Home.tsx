@@ -173,7 +173,15 @@ export default function Home() {
                 </div>
                 <div className="pageScrollLinks2Wrapper">
                     <ul className="pageScrollLinksList2">
-                        <li className="pageScrollLinksItemPodcast"><p>Podcast</p></li>
+                        <li className="pageScrollLinksItemPodcast">
+                            <Link
+                                to="crowLogoWrapper"
+                                spy={true}
+                                smooth={true}
+                                offset={-70}
+                                duration={500}
+                            ><p>Podcast</p></Link>
+                        </li>
                         <li className="pageScrollLinksItemMusic"><p>Music</p></li>
                     </ul>
                 </div>
