@@ -19,7 +19,7 @@ import wendyAndTheSptrite from "../../assets/img/wendy-and-the-sprite-with-logo.
 import page1Cover from "../../assets/img/page-1-cover-with-logo.png";
 import anthology from "../../assets/img/anthology.png";
 import uvfs from "../../assets/img/uvfs.png";
-import comicsLogo from "../../assets/img/comicsLogo.png";
+import comicsLogo from "../../assets/img/allscherry-sign-bubbles.png";
 import comicBlue from "../../assets/img/comicBlue.png";
 import comicGrey from "../../assets/img/comicGrey.png";
 import comicRed from "../../assets/img/comicRed.png";
@@ -361,6 +361,14 @@ export default function Home() {
                 <div className="crowLogoWrapper">
                     <img src={crowLogo} alt="comic" className="crowLogoImg" />
                 </div>
+            </div>
+            <div className="podcastEmbedWrapper">
+                <div className="iframeWrapper">
+                    <iframe src="https://open.spotify.com/embed/episode/0l4vnmjeQovlJD7IWZhIGr?utm_source=generator&theme=0" width="100%" height="200" frameBorder="0"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                </div>
+                <div className="bar1"></div>
+                <div className="bar2"></div>
+                <div className="bar3"></div>
             </div>
         </div>
   );

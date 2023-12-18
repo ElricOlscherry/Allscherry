@@ -12,7 +12,10 @@
     a {
 		text-decoration: none;
 		color: inherit;
+	}
 
+	img {
+		border-radius: 4px;
 	}
 }
 
@@ -787,6 +790,7 @@
 	height: auto;
 	width: 100%;
 	background-color: #FFE7E7;
+	padding-bottom: 20px;
 	.stripeDivider3 {
 		width: 100%;
 		background-color: #FFE7E7;
@@ -1038,5 +1042,40 @@
 			color: black;
 			font-size: 1em;
 		}
+	}
+}
+.podcastEmbedWrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #FFE7E7;
+	flex-direction: column;
+	height: auto;
+	.iframeWrapper {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: auto;
+		width: 100%;
+		background-color: #99C994;
+		padding-top: 30px;
+	}
+	.bar1 {
+		width: 100%;
+		background-color: #879885;
+		margin-top: 20px;
+		height: 35px;
+	}
+	.bar2 {
+		width: 100%;
+		background-color: #999;
+		margin-top: 20px;
+		height: 25px;
+	}
+	.bar3 {
+		width: 100%;
+		background-color: #CBC3C3;
+		margin-top: 20px;
+		height: 20px;
 	}
 }
