@@ -66,6 +66,17 @@
             background-color: #8B3D45;
             margin-right: 10px;
             // fade in
+            animation: leftVerticleBar2 2s ease-in-out;
+            @keyframes leftVerticleBar2 {
+                0% {
+                    opacity: 0;
+                    transform: translateX(-100px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+            }
         }
         .leftNav {
             .leftNavLinks {
@@ -297,6 +308,17 @@
             margin-left: 10px;
             background-color: #8B3D45;
             // fade in
+            animation: rightVerticleBar2 2s ease-in-out;
+            @keyframes rightVerticleBar2 {
+                0% {
+                    opacity: 0;
+                    transform: translateX(100px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+            }
         }
         .rightNav {
             display: flex;

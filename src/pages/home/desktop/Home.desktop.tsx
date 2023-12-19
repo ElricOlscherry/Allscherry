@@ -9,7 +9,7 @@ import emailLogo from '/src/assets/img/mail-footer.png';
 import mailchimpLogo from '/src/assets/img/mailchimp-footer.png';
 import sideBubble from '/src/assets/img/side-bubbles-desktop.png';
 import verticleBar from '/src/assets/shapes/verticleBar.svg';
-import bottomBubbles from '/src/assets/shapes/bottomBubblesDesktop.svg';
+// import bottomBubbles from '/src/assets/shapes/bottomBubblesDesktop.svg';
 export default function HomeDesktop () {
     return (
         <div className="HomeDesktop">
