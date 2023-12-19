@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import HomeMobile from './Home.mobile'
+import HomeMobile from './mobile/Home.mobile'
+import HomeDesktop from './desktop/Home.desktop'
 
 export default function Home() {
     const [screenWidth, setScreenWidth] = useState(window.innerWidth);
@@ -15,11 +16,11 @@ export default function Home() {
     };
     }, []); 
 
-    const breakpoint = 768;
+    const breakpoint = 1050;
 
     return (
         <div className="App">
-            {screenWidth < breakpoint ? <HomeMobile /> : <h1>Desktop not ready yet</h1>}
+            {screenWidth < breakpoint ? <HomeMobile /> : <HomeDesktop />}
         </div>
     )
 }
