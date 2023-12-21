@@ -19,6 +19,8 @@ import woodLogo from "/src/assets/img/woodLogo.png";
 import woodCover from "/src/assets/img/Cover.png";
 import overflowHero from "/src/assets/img/overflowHero.jpeg";
 import overflowLogo from "/src/assets/img/overflowLogo.png";
+import overflowCover from "/src/assets/img/overflowCover.jpeg";
+import overflowListing from "/src/assets/img/overflowListing.png";
 
 export default function ShopMobile() {
     const [showBackToTop, setShowBackToTop] = useState(false);
@@ -165,6 +167,26 @@ export default function ShopMobile() {
                     <div className="overflowStripe1"></div>
                     <div className="overflowStripe2"></div>
                     <div className="overflowStripe3"></div>
+                </div>
+                <div className="overflowTextWrapper">
+                    <div className="overflowText">
+                        <h3>Welcome to my second comic series!</h3>
+                        <br/>
+                        <p>Four adventurers search an ancient underwater land, seemingly inhabited by an advanced civilization. Exploring the broken down and rotted wasteland, they come across mutated creatures and robots, quickly forgetting about their Faded home above. </p>
+                    </div>
+                </div>
+                <div className="shopListingWrapper">
+                    <div className="thumbnailImgWrapper">
+                        <img className="thumbnailImg" src={overflowCover} alt="wendy and the sprite" />
+                    </div>
+                    <div className="titleAndButtonWrapper">
+                        <div className="titleWrapper">
+                            <img className="titleLogo" src={overflowListing} alt="wendy logo" />
+                        </div>
+                        <div className="buttonWrapper">
+                            <a href="https://www.etsy.com/ca/listing/1430283179" target="_blank"><button className="button">Buy Now</button></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
