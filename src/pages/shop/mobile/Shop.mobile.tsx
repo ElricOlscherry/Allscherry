@@ -21,7 +21,9 @@ import overflowHero from "/src/assets/img/overflowHero.jpeg";
 import overflowLogo from "/src/assets/img/overflowLogo.png";
 import overflowCover from "/src/assets/img/overflowCover.jpeg";
 import overflowListing from "/src/assets/img/overflowListing.png";
-
+import anthologyHero from "/src/assets/img/anthologyHero.png";
+import anthologyLogo from "/src/assets/img/anthologyLogo.png";
+import anthologyCover from "/src/assets/img/anthologyCover.png";
 export default function ShopMobile() {
     const [showBackToTop, setShowBackToTop] = useState(false);
 
@@ -185,6 +187,39 @@ export default function ShopMobile() {
                         </div>
                         <div className="buttonWrapper">
                             <a href="https://www.etsy.com/ca/listing/1430283179" target="_blank"><button className="button">Buy Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="anthologyWrapper">
+                <div className="backdropImgWrapper">
+                    <img className="backdropImg" src={anthologyHero} alt="backdrop" />
+                    <div className="anthologyLogoWrapper">
+                        <img className="anthologyLogo" src={anthologyLogo} alt="wendy logo" />
+                    </div>
+                </div>
+                <div className="anthologyStripes">
+                    <div className="anthologyStripe1"></div>
+                    <div className="anthologyStripe2"></div>
+                    <div className="anthologyStripe3"></div>
+                </div>
+                <div className="anthologyTextWrapper">
+                    <div className="anthologyText">
+                        <h3>Welcome to<br/>The AllsCherry Anthology!</h3>
+                        <br/>
+                        <p>This book is the first of many collaborative projects seeking to unite artists to create something special and impactful. Filled with 8 different artists, each with their own story to tell, our first Anthology showcases the talents around Southwestern Ontario!</p>
+                    </div>
+                </div>
+                <div className="shopListingWrapper">
+                    <div className="thumbnailImgWrapper">
+                        <img className="thumbnailImg" src={anthologyCover} alt="wendy and the sprite" />
+                    </div>
+                    <div className="titleAndButtonWrapper">
+                        <div className="titleWrapper">
+                            <img className="titleLogo" src={anthologyLogo} alt="wendy logo" />
+                        </div>
+                        <div className="buttonWrapper">
+                            <a href="https://www.etsy.com/ca/listing/1024627608" target="_blank"><button className="button">Buy Now</button></a>
                         </div>
                     </div>
                 </div>
