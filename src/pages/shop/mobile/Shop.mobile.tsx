@@ -146,6 +146,11 @@ export default function ShopMobile() {
                         </div>
                     </div>
                 </div>
+                <div className="wendyStripes" style={{transform: "rotateX(180deg)", padding: " 0 0 50px 0"}}>
+                    <div className="wendyStripe1"></div>
+                    <div className="wendyStripe2"></div>
+                    <div className="wendyStripe3"></div>
+                </div>
             </div>
         </div>
     );
