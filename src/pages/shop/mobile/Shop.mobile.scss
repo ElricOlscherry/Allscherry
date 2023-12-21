@@ -246,12 +246,13 @@
 	.shopListingWrapper {
 		display: flex;
 		flex-direction: row;
+		justify-content: center;
+		align-items: center;
 		width: 100%;
 		// gradient
 		background: linear-gradient( #CAD9E2 60%, #A2B7C4 0%);
-
+		gap:20px;
 		.thumbnailImgWrapper {
-			padding-left: 10px;
 			display: flex;
 			justify-content: center;
 			align-items: center;
@@ -261,8 +262,6 @@
 		}
 		.titleAndButtonWrapper {
 			padding-top: 100px;
-			margin-left: 20px;
-			padding-right: 50px;
 			.titleWrapper {
 				display: flex;
 				justify-content: center;
