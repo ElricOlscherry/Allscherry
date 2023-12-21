@@ -9,6 +9,7 @@ import emailLogo from '/src/assets/img/mail-footer.png';
 import mailchimpLogo from '/src/assets/img/mailchimp-footer.png';
 import sideBubble from '/src/assets/img/side-bubbles-desktop.png';
 import verticleBar from '/src/assets/shapes/verticleBar.svg';
+import ericImg from '/src/assets/img/eric-desktop.png';
 // import bottomBubbles from '/src/assets/shapes/bottomBubblesDesktop.svg';
 export default function HomeDesktop () {
     return (
@@ -115,7 +116,96 @@ export default function HomeDesktop () {
                 </div>
             </div>
             <div className="ericInfoWrapper">
-                
+                <div className="ericWrapper">
+                    <img className="ericImg" src={ericImg} />
+                    <div className="ericText">
+                        <p>Eric Olcsvary</p>
+                        <p>That's me!</p>
+                    </div>
+                </div>
+                <div className="mainTextWrapper">
+                    <div className="mainText">
+                        <h2>Welcome to a world of possibility</h2>
+                        <br />
+                        <p>My name is Eric Olcsvary, a 22 year old artist with a passion to create things. I make logos, produce music, illustrate comic books, design websites,draw people's pets and occasionally paint.</p>
+                        <br />
+                        <p>But enough about me, let's talk about you, and why you're here!</p>
+                    </div>
+                    <div className="mainText2">
+                        <p>Scrolling down you will see a list of my favorite projects I've worked on, ones that I'm sure will make you smile.</p>
+                        <br />
+                        <p> What if I told you, you could be a part of these projects?</p>
+                        <br />
+                        <p>Have an idea already? Or do you simply seek to be a part of something like this? Contact me below, or simply scroll through what I have to offer, you won't be disappointed. </p>
+                    </div>
+                </div>
+            </div>
+            <div className="pageScrollLinksWrapper">
+                <ul className="pageScrollLinksList">
+                    <li className="pageScrollLinksItemComics">
+                    <Link
+                            to="comicWrapper"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        ><p>Comics</p></Link>
+                    </li>
+                    <li className="pageScrollLinksItemColabs">
+                        <Link 
+                            to="anthologyImgWrapper"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        ><p>Colabs</p></Link>
+                    </li>
+                    <li className="pageScrollLinksItemDesign">
+                        <Link
+                            to="comicsLogo"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        ><p>Design</p></Link>
+                    </li>
+                    <li className="pageScrollLinksItemPainting">
+                        <Link
+                            to="paintingWrapper"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        ><p>Painting</p></Link>
+                    </li>
+                    <li className="pageScrollLinksItemDrawing">
+                        <Link
+                            to="drawingWrapper"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        ><p>Drawing</p></Link>
+                    </li>
+                    <li className="pageScrollLinksItemPodcast">
+                        <Link
+                            to="podcastWrapper"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        ><p>Podcast</p></Link>
+                    </li>
+                    <li className="pageScrollLinksItemMusic">
+                        <Link
+                            to="musicWrapper"
+                            spy={true}
+                            smooth={true}
+                            offset={-70}
+                            duration={500}
+                        ><p>Music</p></Link>
+                    </li>
+                </ul>
             </div>
         </div>
     )
