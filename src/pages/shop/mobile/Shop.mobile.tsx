@@ -13,6 +13,11 @@ import shopHero from "/src/assets/img/shopHero.jpeg";
 import wendyLogo from "/src/assets/img/wendyLogo.png";
 import wendyAndTheSptrite from "/src/assets/img/wendy-and-the-sprite-with-logo.png";
 import originsLogo from "/src/assets/img/originsLogo.png";
+import awakeningCover from "/src/assets/img/page-1-cover-with-logo.png";
+import awakeningLogo from "/src/assets/img/awakeningLogo.png";
+import woodLogo from "/src/assets/img/woodLogo.png";
+import woodCover from "/src/assets/img/Cover.png";
+
 export default function ShopMobile() {
     const [showBackToTop, setShowBackToTop] = useState(false);
 
@@ -36,7 +41,7 @@ export default function ShopMobile() {
             <div className="backToTop">
                 {showBackToTop && (
                     <Link
-                        to="expandedInfoText1"
+                        to="firstBlock"
                         spy={true}
                         smooth={true}
                         offset={-70}
@@ -111,7 +116,33 @@ export default function ShopMobile() {
                             <img className="titleLogo" src={originsLogo} alt="wendy logo" />
                         </div>
                         <div className="buttonWrapper">
-                            <a href="https://www.etsy.com/ca/shop/OlcsvaryCartoons?ref=seller-platform-mcnav" target="_blank"><button className="button">Buy Now</button></a>
+                            <a href="https://www.etsy.com/ca/listing/1024627608" target="_blank"><button className="button">Buy Now</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div className="shopListingWrapper">
+                    <div className="thumbnailImgWrapper">
+                        <img className="thumbnailImg" src={awakeningCover} alt="wendy and the sprite" />
+                    </div>
+                    <div className="titleAndButtonWrapper">
+                        <div className="titleWrapper">
+                            <img className="titleLogo" src={awakeningLogo} alt="wendy logo" />
+                        </div>
+                        <div className="buttonWrapper">
+                            <a href="https://www.etsy.com/ca/listing/1105783040" target="_blank"><button className="button">Buy Now</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div className="shopListingWrapper">
+                    <div className="thumbnailImgWrapper">
+                        <img className="thumbnailImg" src={woodCover} alt="wendy and the sprite" />
+                    </div>
+                    <div className="titleAndButtonWrapper">
+                        <div className="titleWrapper">
+                            <img className="titleLogo" src={woodLogo} alt="wendy logo" />
+                        </div>
+                        <div className="buttonWrapper">
+                            <a href="https://www.etsy.com/ca/listing/1224735155" target="_blank"><button className="button">Buy Now</button></a>
                         </div>
                     </div>
                 </div>
