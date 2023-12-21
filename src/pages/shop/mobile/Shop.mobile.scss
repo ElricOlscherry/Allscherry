@@ -27,10 +27,11 @@
 		height: auto;
 		width: auto;
 		color: black;
+		padding-bottom: 50px;
 
 		// Logo and Slogan section
 		.logoSloganWrapper {
-			margin-bottom: 2vh;
+			margin-bottom: 5vh;
 
 			// Logo
 			.logoWrapper {
@@ -130,11 +131,181 @@
 			align-items: center;
 			text-align: center;
 			background-color: #97C9EA;
-			width: 350px; // Adjust width
+			width: 400px; // Adjust width
 			border-bottom: 10px solid #4EA3DB;
 			border-radius: 15px;
 			padding: 20px;
-			font-size: 1em;
+			font-size:1.1em;
+		}
+		.linkWrapper {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: 5vh;
+
+			.linkList {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				list-style: none;
+				width: 100%; // Adjust width
+				text-align: center;
+				gap: 20px;
+
+
+				.linkItem {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					cursor: pointer;
+					padding-left: 10px;
+					padding-right: 10px;
+					img {
+						width: 40px;
+						height: auto; // Maintain aspect ratio
+					}
+				}
+			}
 		}
     }
+}
+.wendyWrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #CAD9E2;
+	.backdropImgWrapper {
+		.backdropImg {
+			width: 100%;
+		}
+		.wendyLogoWrapper {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-top: -40%;
+			.wendyLogo {
+				width: 50%;
+				height: auto;
+			}
+		}
+	}
+	.wendyStripes {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+
+		.wendyStripe1 {
+			background-color: #8CA5B4;
+			width: 100%;
+			height: 50px;
+			margin-top: 10px;
+			margin-bottom: 5px;
+		}
+		.wendyStripe2 {
+			background-color: #A2B7C4;
+			width: 100%;
+			height: 25px;
+			margin-top: 5px;
+			margin-bottom: 5px;
+		}
+		.wendyStripe3 {
+			background-color: #B2C9D7;
+			margin-top: 5px;
+			margin-bottom: 5px;
+			width: 100%;
+			height: 15px;
+		}
+	}
+	.wendyTextWrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		margin-top: 5vh;
+		margin-bottom: 5vh;
+		.wendyText {
+			color: white;
+			margin-top: 2vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			background-color: #97C9EA;
+			width: 400px; // Adjust width
+			border-bottom: 10px solid #4EA3DB;
+			border-radius: 15px;
+			padding: 20px;
+			font-size: 1.2em;
+		}
+	}
+	.shopListingWrapper {
+		display: flex;
+		flex-direction: row;
+		width: 100%;
+		// gradient
+		background: linear-gradient( #CAD9E2 60%, #A2B7C4 0%);
+
+		.thumbnailImgWrapper {
+			padding-left: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.thumbnailImg {
+				width: 175px;
+			}
+		}
+		.titleAndButtonWrapper {
+			padding-top: 100px;
+			margin-left: 20px;
+			padding-right: 50px;
+			.titleWrapper {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-bottom: 5vh;
+				background-color: white;
+				border-radius: 30px;
+				.titleLogo {
+					width: 200px;
+					height: auto;
+				}
+			}
+			.buttonWrapper {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-top: 10vh;
+				margin-bottom: 5vh;
+				.button {
+					background-color: #787F83;
+					border: none;
+					color: white;
+					padding: 15px 32px;
+					text-align: center;
+					text-decoration: none;
+					display: inline-block;
+					font-size: 16px;
+					border-radius: 10px;
+					// bottom shadow
+					box-shadow: 0 5px #323232;
+					cursor: pointer;
+					&:hover {
+						background-color: #3D498B;
+					}
+					// SIMULATE press
+					&:active {
+						background-color: #3D498B;
+						box-shadow: 0 2px #323232;
+						transform: translateY(4px);
+					}
+				}
+			}
+		}
+	}
+
 }

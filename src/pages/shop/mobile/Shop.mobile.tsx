@@ -6,8 +6,13 @@ import { useEffect, useState } from "react";
 
 import logo from "/src/assets/img/allscherryShopLogo.png";
 import backToTop from "/src/assets/img/back-to-top.png";
-
-
+import instagramLogo from "/src/assets/img/instagramLogo.png";
+import etsyLogo from "/src/assets/img/etsyLogo.png";
+import bmacLogo from "/src/assets/img/bmacLogo.png";
+import shopHero from "/src/assets/img/shopHero.jpeg";
+import wendyLogo from "/src/assets/img/wendyLogo.png";
+import wendyAndTheSptrite from "/src/assets/img/wendy-and-the-sprite-with-logo.png";
+import originsLogo from "/src/assets/img/originsLogo.png";
 export default function ShopMobile() {
     const [showBackToTop, setShowBackToTop] = useState(false);
 
@@ -71,11 +76,44 @@ export default function ShopMobile() {
                     <p><br/>Check out what we have below!</p>
                 </div>
                 <div className="linkWrapper">
-                    {/* <ul className="linkList">
-                        <li className="linkItem"><a href="https://linktr.ee/eolcsvary_art/" target="_blank"><img src={linktree}></img></a></li>
-                        <li className="linkItem"><a href="mailto:eric@eolcsvaryart.com" target="_blank"><img src={mail}></img></a></li>
-                        <li className="linkItem"><a href="#" target="_blank"><img src={mailchimp}></img></a></li>
-                    </ul> */}
+                    <ul className="linkList">
+                        <li className="linkItem"><a href="https://www.etsy.com/ca/shop/OlcsvaryCartoons?ref=seller-platform-mcnav" target="_blank"><img src={etsyLogo}></img></a></li>
+                        <li className="linkItem"><a href="https://www.buymeacoffee.com/allscherry" target="_blank"><img src={bmacLogo}></img></a></li>
+                        <li className="linkItem"><a href="https://www.instagram.com/allscherrycomics/" target="_blank"><img src={instagramLogo}></img></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div className="wendyWrapper">
+                <div className="backdropImgWrapper">
+                    <img className="backdropImg" src={shopHero} alt="backdrop" />
+                    <div className="wendyLogoWrapper">
+                        <img className="wendyLogo" src={wendyLogo} alt="wendy logo" />
+                    </div>
+                </div>
+                <div className="wendyStripes">
+                    <div className="wendyStripe1"></div>
+                    <div className="wendyStripe2"></div>
+                    <div className="wendyStripe3"></div>
+                </div>
+                <div className="wendyTextWrapper">
+                    <div className="wendyText">
+                        <h3>Welcome to my first ever comic book series!</h3>
+                        <br/>
+                        <p>Wendy and Sprite traverse the Grey Planet in search of their loved ones and an answer to the sudden Shadow Nymph attacks. Confronted by many obstacles along the way, they slowly uncover the secrets of the planet, and the ever growing Fading.</p>
+                    </div>
+                </div>
+                <div className="shopListingWrapper">
+                    <div className="thumbnailImgWrapper">
+                        <img className="thumbnailImg" src={wendyAndTheSptrite} alt="wendy and the sprite" />
+                    </div>
+                    <div className="titleAndButtonWrapper">
+                        <div className="titleWrapper">
+                            <img className="titleLogo" src={originsLogo} alt="wendy logo" />
+                        </div>
+                        <div className="buttonWrapper">
+                            <a href="https://www.etsy.com/ca/shop/OlcsvaryCartoons?ref=seller-platform-mcnav" target="_blank"><button className="button">Buy Now</button></a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
