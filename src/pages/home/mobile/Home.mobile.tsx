@@ -2,6 +2,7 @@ import "./Home.mobile.scss";
 import { Helmet } from "react-helmet";
 import { Link  } from "react-scroll";
 import { useEffect, useState } from "react";
+import { Link as RouterLink } from "react-router-dom";
 
 // image imports
 import logo from "/src/assets/img/allscherry-landing.png";
@@ -48,7 +49,7 @@ export default function HomeMobile() {
       }
     };
     return (
-        <div className="home">
+        <div className="homeMobile">
             <Helmet>
                 <title>AllsCherry - Home</title>
             </Helmet>
@@ -79,7 +80,12 @@ export default function HomeMobile() {
                 </div>
                 <div className="selectionBarWrapper">
                     <ul className="selectionBarList">
-                        <li className="selectionBarItemShop"><a href="https://www.etsy.com/ca/shop/OlcsvaryCartoons?ref=seller-platform-mcnav" target="_blank"><p>Shop</p></a></li>
+                        <li className="selectionBarItemShop">
+                            <RouterLink
+                                to="/shop"
+                            ><p>Shop</p>
+                            </RouterLink>
+                        </li>
                         <li className="selectionBarItemProject">
                             <Link
                                 to="pageScrollLinksWrapper"

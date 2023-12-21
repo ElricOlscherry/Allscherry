@@ -1,0 +1,140 @@
+.shopMobile {
+    .backToTop {
+		position: fixed;
+		bottom: 20px;
+		right: 1px;
+		z-index: 99;
+		border: none;
+		outline: none;
+		cursor: pointer;
+		padding: 15px;
+		border-radius: 10px;
+		font-size: 18px;
+		img {
+			width: 50px;
+			height: auto;
+		}
+	}
+	// Mobile-first styles
+	.firstBlock {
+		overflow: hidden;
+		background-color: #E7F6FF;
+		font-weight: bold;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: auto;
+		width: auto;
+		color: black;
+
+		// Logo and Slogan section
+		.logoSloganWrapper {
+			margin-bottom: 2vh;
+
+			// Logo
+			.logoWrapper {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				.mainLogo {
+					width: 250px;
+				}
+			}
+
+			// Slogan
+			.sloganWrapper {
+				display: flex;
+				font-size: 10px;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				margin-bottom:8vh;
+				.slogan {
+					text-align: center;
+					background: transparent;
+					border-radius: 10px;
+					height: 7px;
+					width: 70%;
+					box-shadow: 0 55px 0 0 #4EA3DB;
+				}
+			}
+		}
+
+		// Selection Bar
+		.selectionBarWrapper {
+			margin-bottom: 3vh;
+			.selectionBarList {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				list-style: none;
+				width: 100%;
+				font-size: 17px;
+
+				// Individual Selection Item
+				.selectionBarItemShop,
+				.selectionBarItemProject,
+				.selectionBarItemContact {
+					font-weight: bold;
+					display: flex;
+					justify-content: center;
+					padding: 0px 35px; // Adjust padding
+					align-items: center;
+					width: 25%;
+					text-align: center;
+					cursor: pointer;
+					p::after {
+						content: " ";
+						display: block;
+						height: 0.3em;
+						border-radius: 10px;
+					}
+					&:hover,
+					&.active {
+						color: grey;
+					}
+				}
+
+				.selectionBarItemShop {
+					p::after {
+						width: 4em;
+						background-color: #3D498B;
+					}
+				}
+
+				.selectionBarItemProject {
+					p::after {
+						width: 4em;
+						background-color: #FB8491;
+					}
+				}
+
+				.selectionBarItemContact {
+					p::after {
+						width: 4em;
+						background-color: #4D4849;
+					}
+				}
+			}
+		}
+
+		// Main Text Section
+		.mainText {
+			color: white;
+			margin-top: 2vh;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			background-color: #97C9EA;
+			width: 350px; // Adjust width
+			border-bottom: 10px solid #4EA3DB;
+			border-radius: 15px;
+			padding: 20px;
+			font-size: 1em;
+		}
+    }
+}

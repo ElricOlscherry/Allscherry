@@ -140,7 +140,7 @@ export default function HomeDesktop () {
                     </div>
                 </div>
             </div>
-            <div className="pageScrollLinksWrapper">
+            <div className="pageScrollLinksWrapper2">
                 <ul className="pageScrollLinksList">
                     <li className="pageScrollLinksItemComics">
                     <Link
