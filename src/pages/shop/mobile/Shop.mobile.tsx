@@ -17,6 +17,8 @@ import awakeningCover from "/src/assets/img/page-1-cover-with-logo.png";
 import awakeningLogo from "/src/assets/img/awakeningLogo.png";
 import woodLogo from "/src/assets/img/woodLogo.png";
 import woodCover from "/src/assets/img/Cover.png";
+import overflowHero from "/src/assets/img/overflowHero.jpeg";
+import overflowLogo from "/src/assets/img/overflowLogo.png";
 
 export default function ShopMobile() {
     const [showBackToTop, setShowBackToTop] = useState(false);
@@ -150,6 +152,19 @@ export default function ShopMobile() {
                     <div className="wendyStripe1"></div>
                     <div className="wendyStripe2"></div>
                     <div className="wendyStripe3"></div>
+                </div>
+            </div>
+            <div className="overflowWrapper">
+                <div className="backdropImgWrapper">
+                    <img className="backdropImg" src={overflowHero} alt="backdrop" />
+                    <div className="overflowLogoWrapper">
+                        <img className="overflowLogo" src={overflowLogo} alt="wendy logo" />
+                    </div>
+                </div>
+                <div className="overflowStripes">
+                    <div className="overflowStripe1"></div>
+                    <div className="overflowStripe2"></div>
+                    <div className="overflowStripe3"></div>
                 </div>
             </div>
         </div>

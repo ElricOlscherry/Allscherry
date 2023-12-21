@@ -315,4 +315,25 @@
 			}
 		}
 	}
+	.overflowWrapper {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		.backdropImgWrapper {
+			.backdropImg {
+				width: 100%;
+			}
+			.overflowLogoWrapper {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-top: -20%;
+				.overflowLogo {
+					width: 80%;
+					height: auto;
+				}
+			}
+		}
+	}
 }
