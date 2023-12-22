@@ -396,6 +396,7 @@
 			align-items: center;
 			width: 100%;
 			padding-top: 5vh;
+			padding-bottom: 2vh;
 			// gradient
 			background: linear-gradient( #CAE2DF 60%, #91B5AB 0%);
 			.thumbnailImgWrapper {
@@ -522,8 +523,9 @@
 			justify-content: center;
 			align-items: center;
 			width: 100%;
-			margin-top: 17vh;
+			margin-top: 12vh;
 			margin-bottom: 5vh;
+			z-index: 1;
 			.anthologyText {
 				color: white;
 				margin-top: 2vh;
@@ -567,6 +569,7 @@
 				align-items: center;
 				width: 50%;
 				margin-bottom: 80px;
+				margin-top: 70px;
 				.titleWrapper {
 					display: flex;
 					justify-content: center;
@@ -583,7 +586,7 @@
 					justify-content: center;
 					align-items: center;
 					height: auto;
-					margin-top:100px;
+					margin-top:40px;
 					width: 80%;
 					.button {
 						width: 100%;

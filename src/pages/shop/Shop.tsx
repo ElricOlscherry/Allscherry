@@ -15,7 +15,7 @@ export default function Home() {
     };
     }, []); 
 
-    const breakpoint = 1050;
+    const breakpoint = 950;
 
     return (
         <div className="App">
