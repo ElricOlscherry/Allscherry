@@ -67,15 +67,21 @@ export default function ContactMobile() {
                             }
                         }}>{showMoreText}</button>
                     </div>
-                    <Carousel showThumbs={false}>
+                    <Carousel className="carousel" showThumbs={false}>
                         <div className="gigWrapper">
                             <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs3/353343412/original/773b5413d7efb00147a75e42dcecd441d705e87b/draw-your-dog-or-cat.jpg" alt="Dog1" />
                             <p className="gigTitle">I will make a unique drawing of your pet</p>
                             <button className="gigBtn">Order Now</button>
                         </div>
-                        <div>
-                            <img src="https://example.com/image2.jpg" alt="Image 2" />
-                            <p className="legend">Legend 2</p>
+                        <div className='gigWrapper'>
+                            <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/350902024/original/34c9a9f9bc1b39d2cb3e1f9a627ee5dcae28664c/design-a-logo-for-you.jpg" alt="logo1" />
+                            <p className="gigTitle">I will design a logo for you</p>
+                            <button className="gigBtn">Order Now</button>
+                        </div>
+                        <div className='gigWrapper'>
+                            <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/352552165/original/cd595348704513a19e450ae2bd9de3737f0b6f9b/format-your-book-or-magazine.jpg" alt="logo2" />
+                            <p className="gigTitle">I will format your book or magazine</p>
+                            <button className="gigBtn">Order Now</button>
                         </div>
                     </Carousel>
                 </div>
