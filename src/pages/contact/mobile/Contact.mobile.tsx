@@ -4,6 +4,10 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import "./Contact.mobile.scss";
 import logo from "/src/assets/img/allscherry-logo-grey.png";
 import fiverrLogo from "/src/assets/img/fiverr.png";
+import linktreeGrey from "/src/assets/img/linktree-grey.svg";
+import mailchimpGrey from "/src/assets/img/mailchimp-grey.svg";
+import mailGrey from "/src/assets/img/mail-grey.svg";
+
 import { useState } from 'react';
 export default function ContactMobile() {
     const [bio, setBio] = useState("I am primarily an illustrator and graphic designer. I have written, illustrated and produced 5 of my own published graphic novels...") // [bio, setBio
@@ -34,7 +38,7 @@ export default function ContactMobile() {
                         <li className="selectionBarItemProject">
                             <RouterLink
                                 to="/"
-                            ><p>Project</p>
+                            ><p>Projects</p>
                             </RouterLink>
                         </li>
                         <li className="selectionBarItemContact"><p>Contact</p></li>
@@ -71,19 +75,43 @@ export default function ContactMobile() {
                         <div className="gigWrapper">
                             <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs3/353343412/original/773b5413d7efb00147a75e42dcecd441d705e87b/draw-your-dog-or-cat.jpg" alt="Dog1" />
                             <p className="gigTitle">I will make a unique drawing of your pet</p>
-                            <button className="gigBtn">Order Now</button>
+                            <a href="https://www.fiverr.com/s/KDv82b"><button className="gigBtn">Order Now</button></a>
                         </div>
                         <div className='gigWrapper'>
-                            <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/350902024/original/34c9a9f9bc1b39d2cb3e1f9a627ee5dcae28664c/design-a-logo-for-you.jpg" alt="logo1" />
+                            <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/350902024/original/34c9a9f9bc1b39d2cb3e1f9a627ee5dcae28664c/design-a-logo-for-you.jpg" alt="logo1" className="logoImg"/>
                             <p className="gigTitle">I will design a logo for you</p>
-                            <button className="gigBtn">Order Now</button>
+                            <a href="https://www.fiverr.com/s/pvLdw8"><button className="gigBtn">Order Now</button></a>
                         </div>
                         <div className='gigWrapper'>
                             <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/352552165/original/cd595348704513a19e450ae2bd9de3737f0b6f9b/format-your-book-or-magazine.jpg" alt="logo2" />
                             <p className="gigTitle">I will format your book or magazine</p>
-                            <button className="gigBtn">Order Now</button>
+                            <a href="https://www.fiverr.com/s/wQZk2B"><button className="gigBtn">Order Now</button></a>
                         </div>
                     </Carousel>
+                </div>
+            </div>
+            <div className="linksWrapper">
+                <div className="linksListWrapper">
+                    <ul className="linksList">
+                        <li className="linksListItem">
+                            <a href="mailto:eric@eolcsvaryart.com" target="_blank">
+                                <img src={mailGrey} alt="mail" />
+                                <p className="linksListItemText">eric@eolcsvaryart.com</p>
+                            </a>
+                        </li>
+                        <li className="linksListItem">
+                            <a href="https://linktr.ee/eolcsvary_art/" target="_blank">
+                                <img src={linktreeGrey} alt="linktree" />
+                                <p className="linksListItemText">linktr.ee/eolcsvary_art</p>
+                            </a>
+                        </li>
+                        <li className="linksListItem">
+                            <a href="mailto:team@allscherrycomics.com" target="_blank">
+                                <img src={mailchimpGrey} alt="mailchimp" />
+                                <p className="linksListItemText">team@allscherrycomics.com</p>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
