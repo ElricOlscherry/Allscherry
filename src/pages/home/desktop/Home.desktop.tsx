@@ -215,7 +215,7 @@ export default function HomeDesktop () {
                 </div>
             </div>
             <div className="testForm">
-                <form name="netlify" data-netlify="true">
+                <form name="netlify" method="POST" data-netlify="true">
                     <input type="text" placeholder="Name" />
                     <input type="email" placeholder="Email" />
                     <input type="hidden" name="form-name" value="netlify" />
