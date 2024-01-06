@@ -10,6 +10,12 @@ import mailchimpLogo from '/src/assets/img/mailchimp-footer.png';
 import sideBubble from '/src/assets/img/side-bubbles-desktop.png';
 import verticleBar from '/src/assets/shapes/verticleBar.svg';
 import ericImg from '/src/assets/img/eric-desktop.png';
+import cover from "/src/assets/img/Cover.png";
+import coverRGB from "/src/assets/img/cover-rgb.jpg";
+import wendyAndTheSptrite from "/src/assets/img/wendy-and-the-sprite-with-logo.png";
+import page1Cover from "/src/assets/img/page-1-cover-with-logo.png";
+import anthology from "/src/assets/img/anthology.png";
+import uvfs from "/src/assets/img/uvfs.png";
 // import bottomBubbles from '/src/assets/shapes/bottomBubblesDesktop.svg';
 export default function HomeDesktop () {
     return (
@@ -213,22 +219,61 @@ export default function HomeDesktop () {
                     <div className="comicBookStripe2"></div>
                     <div className="comicBookStripe3"></div>
                 </div>
+                <div className="comicStripWrapper">
+                    <img className="comicStrip" src={cover} />
+                    <img className="comicStrip" src={coverRGB} />
+                    <img className="comicStrip" src={wendyAndTheSptrite} />
+                    <img className="comicStrip" src={page1Cover} />
+                </div>
+                <div className="mainTextWrapper">
+                    <div className="leftBubbleWrapper">
+                        <img className="leftBubbleImg" src={sideBubble} />
+                    </div>
+                    <div className="mainText">
+                        <h2>AllsCherry Comics, Indie Publishing</h2>
+                        <br />
+                        <p>The center of AllsCherry, and it's original purpose, was that of creating indie comics! Wendy and the Sprite, and Overflow, are my two main series. They are for all ages, with fun pictures and a large plot!</p>
+                    </div>
+                    <div className="rightBubbleWrapper">
+                            <img className="rightBubbleImg" src={sideBubble} />
+                    </div>
+                </div>
+                <div className="comicButtonWrapper">
+                    <a href="#projects" className="comicButton">Check Them Out Here!</a>
+                </div>
             </div>
-            <form name="contact" method="post">
-          <input type="hidden" name="form-name" value="contact" />
-          <p>
-            <label>Your Name: <input type="text" name="name"/></label>
-          </p>
-          <p>
-            <label>Your Email: <input type="email" name="email"/></label>
-          </p>
-          <p>
-            <label>Message: <textarea name="message"></textarea></label>
-          </p>
-          <p>
-            <button type="submit">Send</button>
-          </p>
-        </form>
+            <div className="anthologyUVFSWrapper">
+                <div className="anthologyWrapper">
+                    <div className="anthologyStripes">
+                        <div className="anthologyStripe1"></div>
+                        <div className="anthologyStripe2"></div>
+                        <div className="anthologyStripe3"></div>
+                        <img src={anthology} />
+                    </div>
+                    <div className="anthologyTextWrapper">
+                        <h2>The AllsCherry Anthology</h2>
+                        <p>Bringing together a collection of 8 unique stories all by a different artist, the AllsCherry Anthology's goal is to unite creators to make something special, and to show off our talents! The first of many to come, this book is the embodiment of AllsCherry's goal!</p>
+                    </div>
+                    <div className="anthologyButtonWrapper">
+                        <a href="#projects" className="anthologyButton">Check It Out Here!</a>
+                    </div>
+                </div>
+                <div className="uvfsWrapper">
+                    <div className="uvfsStripes">
+                        <div className="uvfsStripe1"></div>
+                        <div className="uvfsStripe2"></div>
+                        <div className="uvfsStripe3"></div>
+                        <img src={uvfs} />
+                    </div>
+                    <div className="uvfsTextWrapper">
+                        <h2>UVFS x AllsCherry</h2>
+                        <p>In collaboration with The University of Victoria’s Fashion Society, AllsCherry coordinated and produced a fashion magazine to promote story through clothing, and how those stories help shape a person. Be yourself, for yourself!</p>
+                    </div>
+                    <div className="uvfsButtonWrapper">
+                        <a href="#projects" className="uvfsButton">Check It Out Here!</a>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

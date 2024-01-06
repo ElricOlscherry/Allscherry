@@ -684,6 +684,7 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
+    background-color: #FFE7E7;
     .comicBookStripeWrapper {
         display: flex;
         justify-content: center;
@@ -708,6 +709,294 @@
             background-color: #C0777E;
             height: 25px;
             margin-bottom: 20px;
+        }
+    }
+    .comicStripWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: top;
+        flex-direction: row;
+        width: 100%;
+        .comicStrip {
+            width: 300px;
+            margin-top:-30px;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+    }
+    .mainTextWrapper {
+        display: flex;
+        flex-direction: row;
+        margin-top: 10vh;
+        .mainText {
+            color: white;
+            margin-left:100px;
+            margin-right:100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #F16171;
+            width: 600px; // Adjust width
+            border-bottom: 10px solid #8B3D45;
+            border-radius: 15px;
+            padding: 40px;
+            font-size: 1.5em;
+            // fade in
+            animation: mainText 2s ease-in-out;
+            @keyframes mainText {
+                0% {
+                    opacity: 0;
+                    transform: translateY(-100px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateY(0px);
+                }
+            }
+        }
+        .leftBubbleWrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 2vh;
+            .leftBubbleImg {
+                width: 200px;
+                // flip image
+                transform: scaleX(-1);
+            }
+            // animation
+            animation: leftBubble 2s ease-in-out;
+            @keyframes leftBubble {
+                0% {
+                    opacity: 0;
+                    transform: translateX(-30px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+            }
+        }
+        .rightBubbleWrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 2vh;
+            .rightBubbleImg {
+                width: 200px;
+            }
+            // animation
+            animation: rightBubble 2s ease-in-out;
+            @keyframes rightBubble {
+                0% {
+                    opacity: 0;
+                    transform: translateX(30px);
+                }
+                100% {
+                    opacity: 1;
+                    transform: translateX(0px);
+                }
+            }
+        }
+    }
+    .comicButtonWrapper {
+        margin-top:40px;
+        .comicButton {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            padding: 10px 20px 10px 20px;
+            background-color: #8B3D45;
+            color: white;
+            border-radius: 20px;
+            border-width: 0px;
+            font-size: 1.5em;
+            border-bottom: 5px solid #F16171;
+            &:hover {
+                background-color: #2B2B2B;
+            }
+            //simulate a pess
+            &:active {
+                border-bottom: 0px solid #2B2B2B;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+.anthologyUVFSWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    background-color: #FFFBFB;
+    .anthologyWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        .anthologyStripes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #CAD4E2;
+            width: 100%;
+
+            .anthologyStripe1 {
+                width: 100%;
+                background-color: #4C5C71;
+                height: 100px;
+                margin-bottom: 20px;
+            }
+            .anthologyStripe2 {
+                width: 100%;
+                background-color: #7F8DA0;
+                height: 50px;
+                margin-bottom: 20px;
+            }
+            .anthologyStripe3 {
+                width: 100%;
+                background-color: #ABBCD6;
+                height: 25px;
+                margin-bottom: 20px;
+            }
+            img {
+                width: 400px;
+                margin-top:-50px;
+                margin-bottom: 50px;
+            }
+        }
+        .anthologyTextWrapper {
+            display: flex;
+            flex-direction: row;
+            margin-top: 10vh;
+            color: white;
+            margin-left:100px;
+            margin-right:100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #798FAE;
+            width: 600px; // Adjust width
+            border-bottom: 10px solid #4C5C71;
+            border-radius: 15px;
+            padding: 40px;
+            font-size: 1.5em;
+        }
+        .anthologyButtonWrapper {
+            margin-top:40px;
+            .anthologyButton {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                padding: 10px 20px 10px 20px;
+                background-color: #4C5C71;
+                color: white;
+                border-radius: 20px;
+                border-width: 0px;
+                font-size: 1.5em;
+                border-bottom: 5px solid #798FAE;
+                &:hover {
+                    background-color: #2B2B2B;
+                }
+                //simulate a pess
+                &:active {
+                    border-bottom: 0px solid #2B2B2B;
+                    margin-top: 5px;
+                }
+            }
+        
+        }
+    }
+    .uvfsWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 50%;
+        .uvfsStripes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: #DCA3A3;
+            width: 100%;
+            .uvfsStripe1 {
+                width: 100%;
+                background-color: #8B3D45;
+                height: 100px;
+                margin-bottom: 20px;
+            }
+            .uvfsStripe2 {
+                width: 100%;
+                background-color: #A85E65;
+                height: 50px;
+                margin-bottom: 20px;
+            }
+            .uvfsStripe3 {
+                width: 100%;
+                background-color: #C0777E;
+                height: 25px;
+                margin-bottom: 20px;
+            }
+            img {
+                width: 400px;
+                margin-top:-50px;
+                margin-bottom: 50px;
+            }
+        }
+        .uvfsTextWrapper {
+            display: flex;
+            flex-direction: row;
+            margin-top: 10vh;
+            color: white;
+            margin-left:100px;
+            margin-right:100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #F16171;
+            width: 600px; // Adjust width
+            border-bottom: 10px solid #8B3D45;
+            border-radius: 15px;
+            padding: 40px;
+            font-size: 1.5em;
+        }
+        .uvfsButtonWrapper {
+            margin-top:40px;
+            .uvfsButton {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+                padding: 10px 20px 10px 20px;
+                background-color: #8B3D45;
+                color: white;
+                border-radius: 20px;
+                border-width: 0px;
+                font-size: 1.5em;
+                border-bottom: 5px solid #F16171;
+                &:hover {
+                    background-color: #2B2B2B;
+                }
+                //simulate a pess
+                &:active {
+                    border-bottom: 0px solid #2B2B2B;
+                    margin-top: 5px;
+                }
+            }
         }
     }
 }
