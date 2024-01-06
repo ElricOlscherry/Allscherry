@@ -96,7 +96,7 @@ export default function HomeMobile() {
                             <p>Projects</p>
                             </Link>
                         </li>
-                        <li className="selectionBarItemContact"><p>Contact</p></li>
+                        <li className="selectionBarItemContact"><RouterLink to="/contact"><p>Contact</p></RouterLink></li>
                     </ul>
                 </div>
                 <div className="mainText">
