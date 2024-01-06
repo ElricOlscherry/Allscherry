@@ -24,6 +24,11 @@ import overflowListing from "/src/assets/img/overflowListing.png";
 import anthologyHero from "/src/assets/img/anthologyHero.png";
 import anthologyLogo from "/src/assets/img/anthologyLogo.png";
 import anthologyCover from "/src/assets/img/anthologyCover.png";
+import genesisPoster from "/src/assets/img/genesisPoster.jpeg";
+import nothboundPoster from "/src/assets/img/northboundPoster.jpeg";
+import wendyShirt from "/src/assets/img/wendyShirt.jpeg";
+import duneShirt from "/src/assets/img/duneShirt.jpeg";
+import allscherrycomicsLogo from "/src/assets/img/allscherrycomics.png"
 export default function ShopMobile() {
     const [showBackToTop, setShowBackToTop] = useState(false);
 
@@ -78,7 +83,12 @@ export default function ShopMobile() {
                             ><p>Projects</p>
                             </RouterLink>
                         </li>
-                        <li className="selectionBarItemContact"><p>Contact</p></li>
+                        <li className="selectionBarItemContact">
+                            <RouterLink 
+                                to="/contact">
+                                <p>Contact</p>
+                            </RouterLink>
+                        </li>
                     </ul>
                 </div>
                 <div className="mainText">
@@ -220,6 +230,68 @@ export default function ShopMobile() {
                         </div>
                         <div className="buttonWrapper">
                             <a href="https://www.etsy.com/ca/listing/1024627608" target="_blank"><button className="button">Buy Now</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className="clothesWrapper">
+                <div className="clothesStripeWrapper">
+                    <div className="clothesStripe1"></div>
+                    <div className="clothesStripe2"></div>
+                    <div className="clothesStripe3"></div>
+                </div>
+                <div className="clothesLogoWrapper">
+                    <img className="clothesLogo" src={allscherrycomicsLogo} alt="wendy logo" />
+                </div>
+                {/* 2x2 grid */}
+                <div className="gridWrapper">
+                    <div className="gridItem">
+                        <div className="gridItemImgWrapper">
+                            <img className="gridItemImg" src={wendyShirt} alt="wendy and the sprite" />
+                        </div>
+                        <div className="gridItemTextWrapper">
+                            <div className="gridItemText">
+                                <p>Wendy Eyes
+                                White Sweatshirt</p>
+                            </div>
+                            <a href="https://www.etsy.com/ca/listing/1447635497/wendy-eyes-sweatshirt" target="_blank">Buy Now</a>
+                        </div>
+                    </div>
+                    <div className="gridItem">
+                        <div className="gridItemImgWrapper">
+                            <img className="gridItemImg" src={duneShirt} alt="wendy and the sprite" />
+                        </div>
+                        <div className="gridItemTextWrapper">
+                            <div className="gridItemText">
+                                <p>The DuneSend
+                                Blue T-Shirt</p>
+                            </div>
+                            <a href="https://www.etsy.com/ca/listing/1433441582/dunesend-tee" target="_blank">Buy Now</a>
+                        </div>
+                    </div>
+                    <div className="gridItem">
+                        <div className="gridItemImgWrapper">
+                            <img className="gridItemImg" src={nothboundPoster} alt="wendy and the sprite" />
+                        </div>
+                        <div className="gridItemTextWrapper">
+                            <div className="gridItemText">
+                                <p>The Northbound Mountain
+                                Poster</p>
+                            </div>
+                            <a href="https://www.etsy.com/ca/listing/1596985636/the-northbound-mountain-era-of-themetal" target="_blank">Buy Now</a>
+                        </div>
+                        
+                    </div>
+                    <div className="gridItem">
+                        <div className="gridItemImgWrapper">
+                            <img className="gridItemImg" src={genesisPoster} alt="wendy and the sprite" />
+                        </div>
+                        <div className="gridItemTextWrapper">
+                            <div className="gridItemText">
+                                <p>Mount Genesis
+                                <br/>Poster</p>
+                            </div>
+                            <a href="https://www.etsy.com/ca/listing/1611160869/mount-genesis-era-of-the-fading" target="_blank">Buy Now</a>
                         </div>
                     </div>
                 </div>
