@@ -520,7 +520,7 @@
     align-items: center;
     padding-top: 5vh;
     padding-bottom: 5vh;
-    background-color: #DCA3A3;
+    background-color: #FFE7E7;
     color: white;
     font-size: 20px;
     
@@ -543,6 +543,7 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
+            color: #2C2C2C;
             padding-left: 20px;
             padding-right: 20px;
             p::after {
@@ -552,7 +553,7 @@
                 border-radius: 10px;
             }
             :hover {
-                color: #FFE7E7;
+                color: white;
             }
         }
         .pageScrollLinksItemComics {
@@ -674,6 +675,39 @@
                     transform: translateY(0px);
                 }
             }
+        }
+    }
+}
+.comicBookWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    .comicBookStripeWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background-color: #DCA3A3;
+        width: 100%;
+        .comicBookStripe1 {
+            width: 100%;
+            background-color: #8B3D45;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+        .comicBookStripe2 {
+            width: 100%;
+            background-color: #A85E65;
+            height: 50px;
+            margin-bottom: 20px;
+        }
+        .comicBookStripe3 {
+            width: 100%;
+            background-color: #C0777E;
+            height: 25px;
+            margin-bottom: 20px;
         }
     }
 }

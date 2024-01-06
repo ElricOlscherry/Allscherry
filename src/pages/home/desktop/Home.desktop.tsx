@@ -207,6 +207,21 @@ export default function HomeDesktop () {
                     </li>
                 </ul>
             </div>
+            <div className="comicBookWrapper">
+                <div className="comicBookStripeWrapper">
+                    <div className="comicBookStripe1"></div>
+                    <div className="comicBookStripe2"></div>
+                    <div className="comicBookStripe3"></div>
+                </div>
+            </div>
+            <div className="testForm">
+                <form name="netlify">
+                    <input type="text" placeholder="Name" />
+                    <input type="email" placeholder="Email" />
+                    <textarea placeholder="Message" />
+                    <button type="submit">Send</button>
+                </form>
+            </div>
         </div>
     )
 }
