@@ -215,10 +215,10 @@ export default function HomeDesktop () {
                 </div>
             </div>
             <div className="testForm">
-                <form name="netlify" netlify>
+                <form name="netlify" data-netlify="true">
                     <input type="text" placeholder="Name" />
                     <input type="email" placeholder="Email" />
-                    <textarea placeholder="Message" />
+                    <input type="hidden" name="form-name" value="netlify" />
                     <button type="submit">Send</button>
                 </form>
             </div>
