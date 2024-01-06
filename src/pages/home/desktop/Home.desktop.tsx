@@ -214,24 +214,23 @@ export default function HomeDesktop () {
                     <div className="comicBookStripe3"></div>
                 </div>
             </div>
-                <div className="testForm">
-                <form 
-                name="contact" 
-                method="POST" 
-                data-netlify="true" 
-                >
-            <input type="hidden" name="form-name" value="contact" />
-            <textarea id="standard-basic"  name="name" /> <br />
-            <textarea id="standard-basic"  name="email" /> <br />
-            <textarea
-   
-            />
-            <br />
-            <div>
-                <button type="submit">Send</button>
-            </div>
-            </form>
-            </div>
+            <form name="contact" method="post">
+      <p>
+        <label htmlFor="name">Name</label> <br />
+        <input type="text" id="name" name="name" required />
+      </p>
+      <p>
+        <label htmlFor="email">Email</label> <br />
+        <input type="email" id="email" name="email" required />
+      </p>
+      <p>
+        <label htmlFor="message">Message</label> <br />
+        <textarea id="message" name="message" required></textarea>
+      </p>
+      <p>
+        <input type="submit" value="Submit message" />
+      </p>
+    </form>
         </div>
     )
 }
