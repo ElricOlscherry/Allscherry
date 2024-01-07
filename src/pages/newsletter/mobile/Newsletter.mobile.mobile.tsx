@@ -46,7 +46,7 @@ export default function NewsletterMobile() {
                 <p>Content such as local artists, events and all of the latest AllsCherry updates. We want to keep you up to date with our affairs and show off our affiliate artists! If you're interested in being a part of the newsletter, apply below!</p>
             </div>
             <div className="newsletterFormWrapper">
-                <form style={emailSubmitted ? { display: 'none' } : {}} className="newsletterForm" name="newsletter" onSubmit={(e) => e.preventDefault()} method="post">
+                <form style={emailSubmitted ? { display: 'none' } : {}} className="newsletterForm" name="newsletter" method="post">
                     <div className="newsletterFormEmail">
                         <input style={inputStyle} onChange={(e) => setEmailValid(validateEmail(e.target.value))} type="email" name="email" />
                     </div>
