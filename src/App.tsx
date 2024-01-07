@@ -3,7 +3,7 @@ import NotFound from './pages/404/NotFound'
 import Home from './pages/home/Home'
 import Shop from './pages/shop/Shop'
 import Contact from './pages/contact/Contact'
-
+import Newsletter from './pages/newsletter/Newsletter'
 import { Route, Routes } from "react-router-dom";
 
 export default function App() {
@@ -12,6 +12,7 @@ export default function App() {
       <Route path="/" element={<Home />} />
       <Route path="/shop" element={<Shop />} />
       <Route path="/contact" element={<Contact />} />
+      <Route path="/newsletter" element={<Newsletter />} />
       <Route path="*"  element={<NotFound />} />
     </Routes>
   );

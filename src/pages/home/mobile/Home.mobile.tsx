@@ -108,7 +108,7 @@ export default function HomeMobile() {
                     <ul className="linkList">
                         <li className="linkItem"><a href="https://linktr.ee/eolcsvary_art/" target="_blank"><img src={linktree}></img></a></li>
                         <li className="linkItem"><a href="mailto:eric@eolcsvaryart.com" target="_blank"><img src={mail}></img></a></li>
-                        <li className="linkItem"><a href="#" target="_blank"><img src={mailchimp}></img></a></li>
+                        <li className="linkItem"><RouterLink to="/newsletter"><img src={mailchimp}></img></RouterLink></li>
                     </ul>
                 </div>
                 <div className="seeMoreWrapper">
