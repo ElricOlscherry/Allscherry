@@ -16,6 +16,10 @@ import wendyAndTheSptrite from "/src/assets/img/wendy-and-the-sprite-with-logo.p
 import page1Cover from "/src/assets/img/page-1-cover-with-logo.png";
 import anthology from "/src/assets/img/anthology.png";
 import uvfs from "/src/assets/img/uvfs.png";
+import comicBlue from "/src/assets/img/comicBlue.png";
+import comicGrey from "/src/assets/img/comicGrey.png";
+import comicRed from "/src/assets/img/comicRed.png";
+import allscherrycomics from "/src/assets/img/allscherrycomics.png";
 // import bottomBubbles from '/src/assets/shapes/bottomBubblesDesktop.svg';
 export default function HomeDesktop () {
     return (
@@ -272,6 +276,42 @@ export default function HomeDesktop () {
                     <div className="uvfsButtonWrapper">
                         <a href="#projects" className="uvfsButton">Check It Out Here!</a>
                     </div>
+                </div>
+            </div>
+            <div className="designWrapper">
+                <div className="designStripes">
+                    <div className="designStripe1"></div>
+                    <div className="designStripe2"></div>
+                    <div className="designStripe3"></div>
+                    <div className="designStripe4"></div>
+                </div>
+                <div className="logoWrapper">
+                    <div className="logoImgWrapper">
+                        <img className="logoImg" src={allsCherryLogo} />
+                    </div>
+                </div>
+                <div className="mainTextBubbleWrapper">
+                    <div className="leftBubbleWrapper">
+                        <img className="leftBubbleImg" src={sideBubble} />
+                    </div>
+                    <div className="mainTextWrapper">
+                        <div className="mainText">
+                            <p>AllsCherry, a symbol of community and my work as an artist</p>
+                            <br />
+                            <p>The logo is a play on my last name, Olcsvary, and an old nickname from high school. Originally a publishing label for my comics, it has now become something more; an opportunity to create not just for myself, but with others!</p>
+                        </div>
+                    </div>
+                    <div className="rightBubbleWrapper">
+                        <img className="rightBubbleImg" src={sideBubble} />
+                    </div>
+                </div>
+                <div className="comicImgWrapper">
+                    <img src={comicGrey} alt="comic" className="comicImgGrey" />
+                    <img src={comicRed} alt="comic" className="comicImgRed" />
+                    <img src={comicBlue} alt="comic" className="comicImgBlue" />
+                </div>
+                <div className="allsCherryComicsLogoWrapper">
+                    <img src={allscherrycomics} alt="logo" className="allsCherryComicsLogoImg" />
                 </div>
             </div>
         </div>
