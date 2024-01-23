@@ -20,7 +20,9 @@ import comicBlue from "/src/assets/img/comicBlue.png";
 import comicGrey from "/src/assets/img/comicGrey.png";
 import comicRed from "/src/assets/img/comicRed.png";
 import allscherrycomics from "/src/assets/img/allscherrycomics.png";
-// import bottomBubbles from '/src/assets/shapes/bottomBubblesDesktop.svg';
+import allsCherrySign from "/src/assets/img/allscherry-sign-bubbles.png";
+import theSpinning from "/src/assets/img/theSpinning.png";
+import lookingBack from "/src/assets/img/lookingBack.png";
 export default function HomeDesktop () {
     return (
         <div className="HomeDesktop">
@@ -271,7 +273,7 @@ export default function HomeDesktop () {
                     </div>
                     <div className="uvfsTextWrapper">
                         <h2>UVFS x AllsCherry</h2>
-                        <p>In collaboration with The University of Victoria’s Fashion Society, AllsCherry coordinated and produced a fashion magazine to promote story through clothing, and how those stories help shape a person. Be yourself, for yourself!</p>
+                        <p>In collaboration with The University of Victoria's Fashion Society, AllsCherry coordinated and produced a fashion magazine to promote story through clothing, and how those stories help shape a person. Be yourself, for yourself!</p>
                     </div>
                     <div className="uvfsButtonWrapper">
                         <a href="#projects" className="uvfsButton">Check It Out Here!</a>
@@ -287,7 +289,7 @@ export default function HomeDesktop () {
                 </div>
                 <div className="logoWrapper">
                     <div className="logoImgWrapper">
-                        <img className="logoImg" src={allsCherryLogo} />
+                        <img className="logoImg" src={allsCherrySign} />
                     </div>
                 </div>
                 <div className="mainTextBubbleWrapper">
@@ -296,7 +298,7 @@ export default function HomeDesktop () {
                     </div>
                     <div className="mainTextWrapper">
                         <div className="mainText">
-                            <p>AllsCherry, a symbol of community and my work as an artist</p>
+                            <h2>AllsCherry, a symbol of community and my work as an artist</h2>
                             <br />
                             <p>The logo is a play on my last name, Olcsvary, and an old nickname from high school. Originally a publishing label for my comics, it has now become something more; an opportunity to create not just for myself, but with others!</p>
                         </div>
@@ -312,6 +314,32 @@ export default function HomeDesktop () {
                 </div>
                 <div className="allsCherryComicsLogoWrapper">
                     <img src={allscherrycomics} alt="logo" className="allsCherryComicsLogoImg" />
+                </div>
+            </div>
+            <div className="paintingWrapper">
+                <div className="paintingStripes">
+                    <div className="paintingStripe1"></div>
+                    <div className="paintingStripe2"></div>
+                    <div className="paintingStripe3"></div>
+                </div>
+                <div className="paintingImgWrapper">
+                    <img src={theSpinning} alt="painting" className="paintingImg" />
+                    <img src={lookingBack} alt="painting" className="paintingImg" />
+                </div>
+                <div className="mainTextBubbleWrapper">
+                    <div className="leftBubbleWrapper">
+                        <img className="leftBubbleImg" src={sideBubble} />
+                    </div>
+                    <div className="mainTextWrapper">
+                        <div className="mainText">
+                            <h2>Painting Night Terrors</h2>
+                            <br />
+                            <p>Some of my favorite early paintings are my Night Terror paintings. Suffering from night terrors for many years as a child, these simple paintings to one person, is a personal hell to another. It made my love for painting and expression that much stronger.</p>
+                        </div>
+                    </div>
+                    <div className="rightBubbleWrapper">
+                        <img className="rightBubbleImg" src={sideBubble} />
+                    </div>
                 </div>
             </div>
         </div>
