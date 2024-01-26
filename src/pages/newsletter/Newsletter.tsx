@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import HomeMobile from './mobile/Newsletter.mobile.mobile';
+import HomeMobile from './mobile/Newsletter.mobile.tsx';
 
 
 export default function Home() {
