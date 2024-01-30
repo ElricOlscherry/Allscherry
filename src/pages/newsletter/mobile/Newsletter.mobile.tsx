@@ -37,14 +37,11 @@ export default function NewsletterMobile() {
                 throw new Error(`HTTP error! Status: ${response.status}`);
             }
 
-            const data = response.data;
 
             // Handle the response data as needed
-            console.log(data);
-            console.log(email);
+
         } catch (error) {
             // Handle errors
-            console.error(error);
         }
     };
 

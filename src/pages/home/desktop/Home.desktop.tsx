@@ -23,6 +23,10 @@ import allscherrycomics from "/src/assets/img/allscherrycomics.png";
 import allsCherrySign from "/src/assets/img/allscherry-sign-bubbles.png";
 import theSpinning from "/src/assets/img/theSpinning.png";
 import lookingBack from "/src/assets/img/lookingBack.png";
+import crowOnAPerch from "/src/assets/img/crowOnAPerch.png";
+import setDraw from "/src/assets/img/setDraw.jpeg";
+import crowLogo from "/src/assets/img/crowLogo.png";
+
 export default function HomeDesktop () {
     return (
         <div className="HomeDesktop">
@@ -340,6 +344,55 @@ export default function HomeDesktop () {
                     <div className="rightBubbleWrapper">
                         <img className="rightBubbleImg" src={sideBubble} />
                     </div>
+                </div>
+            </div>
+            <div className="podcastWrapper">
+                <div className="podcastStripes">
+                    <div className="podcastStripe1"></div>
+                    <div className="podcastStripe2"></div>
+                    <div className="logoWrapper">
+                    <div className="logoImgWrapper">
+                        <img className="logoImg" src={crowOnAPerch} />
+                    </div>
+                    </div>
+                    <div className="podcastStripe3"></div>
+                    <div className="podcastStripe4">
+                    </div>
+                </div>
+
+                <div className="mainTextBubbleWrapper">
+                    <div className="leftBubbleWrapper">
+                        <img className="leftBubbleImg" src={sideBubble} />
+                    </div>
+                    <div className="mainTextWrapper">
+                        <div className="mainText">
+                            <h2>Crow on a Perch</h2>
+                            <br/>
+                            <p>Season 1 of this podcast just ended! The show is about our lives as growing young adults in a world that almost seems to push art and critical thinking to the sidelines. Sharing our own growth and experiences, the pod is meant to show that nobody is perfect, and that fact is beautiful.</p>
+                        </div>
+                    </div>
+                    <div className="rightBubbleWrapper">
+                        <img className="rightBubbleImg" src={sideBubble} />
+                    </div>
+                </div>
+                <div className="buttonWrapper">
+                    <a href="#projects" className="button">Now on spotify!</a>
+                </div>
+                <div className="setDrawWrapper">
+                    <img src={setDraw} alt="comic" className="setDrawImg" />
+                </div>
+                <div className="crowLogoWrapper">
+                    <img src={crowLogo} alt="comic" className="crowLogoImg" />
+                </div>
+                <div className="spotifyEmbed">
+                    <div className="embed">
+                    <iframe src="https://open.spotify.com/embed/episode/0l4vnmjeQovlJD7IWZhIGr?utm_source=generator&theme=0" width="75%" height="500" frameBorder="0"  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div className="podcastBottomStripes">
+                    <div className="podcastBottomStripe1"></div>
+                    <div className="podcastBottomStripe2"></div>
+                    <div className="podcastBottomStripe3"></div>
                 </div>
             </div>
         </div>

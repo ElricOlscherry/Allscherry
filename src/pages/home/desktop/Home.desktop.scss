@@ -685,6 +685,7 @@
     flex-direction: column;
     width: 100%;
     background-color: #FFE7E7;
+    padding-bottom:10vh;
     .comicBookStripeWrapper {
         display: flex;
         justify-content: center;
@@ -835,6 +836,7 @@
     width: 100%;
     height: auto;
     background-color: #FFFBFB;
+    padding-bottom:10vh;
     .anthologyWrapper {
         display: flex;
         justify-content: center;
@@ -924,6 +926,7 @@
         align-items: center;
         flex-direction: column;
         width: 50%;
+        
         .uvfsStripes {
             display: flex;
             justify-content: center;
@@ -1131,6 +1134,7 @@
     background-color: #F9EDEA;
     width: 100%;
     padding-top: 10vh;
+    padding-bottom: 10vh;
     .paintingStripes {
         display: flex;
         justify-content: center;
@@ -1166,7 +1170,7 @@
         margin-top: -400px;
         gap:100px;
         .paintingImg {
-            width: 700px;
+            width: 500px;
         }
     }
     .mainTextBubbleWrapper {
@@ -1205,5 +1209,189 @@
                 width: 150px;
             }
         }
+    }
+}
+
+.podcastWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #FFFBFB;
+    width: 100%;
+    .podcastStripes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+
+        .podcastStripe1 {
+            width: 100%;
+            background-color: #99C994;
+            height: 300px;
+            margin-bottom: 40px;
+        }
+        .podcastStripe2 {
+            width: 100%;
+            background-color: #879885;
+            height: 75px;
+            margin-bottom: 10px;
+        }
+        .logoWrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .logoImgWrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                .logoImg {
+                    width: 600px;
+                }
+            }
+        }
+        .podcastStripe3 {
+            width: 100%;
+            background-color: #999999;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .podcastStripe4 {
+            width: 100%;
+            background-color: #CBC3C3;
+            height: 25px;
+            margin-bottom: 10px;
+        }
+    }
+    .mainTextBubbleWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-top: 100px;
+        .leftBubbleWrapper {
+            .leftBubbleImg {
+                width: 150px;
+                margin-right: 20px;
+                // flip image
+                transform: scaleX(-1);
+            }
+        }
+        .mainTextWrapper {
+            color: white;
+            margin-top: 2vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background-color: #6B607E;
+            width: 700px; // Adjust width
+            border-bottom: 10px solid #524568;
+            border-radius: 15px;
+            padding: 40px;
+            font-size: 24px;
+            height: 300px;
+        }
+        .rightBubbleWrapper {
+            .rightBubbleImg {
+                margin-left: 20px;
+                width: 150px;
+            }
+        }
+    }
+    .buttonWrapper {
+        margin-top:40px;
+        .button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            padding: 10px 20px 10px 20px;
+            background-color: #3A4950;
+            color: white;
+            border-radius: 20px;
+            border-width: 0px;
+            font-size: 1.5em;
+            border-bottom: 5px solid #5A757C;
+            &:hover {
+                background-color: #2B2B2B;
+            }
+            //simulate a pess
+            &:active {
+                border-bottom: 0px solid #2B2B2B;
+                margin-top: 5px;
+            }
+        }
+    }
+    .setDrawWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5vh;
+        .setDrawImg {
+            height: auto;
+            width: 650px;
+        }
+    }
+    .crowLogoWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -130px;
+        .crowLogoImg {
+            height: auto;
+            width: 300px;
+        }
+    }
+    .spotifyEmbed {
+        margin-top: 50px;
+        margin-bottom: -50px;
+        padding-top:50px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+        background-color: #99C994;
+        .embed {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            padding-top:50px;
+        }
+    }
+    .podcastBottomStripes {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+
+        .podcastBottomStripe1 {
+            width: 100%;
+            background-color: #879885;
+            height: 75px;
+            margin-bottom: 10px;
+        }
+        .podcastBottomStripe2 {
+            width: 100%;
+            background-color: #999999;
+            height: 75px;
+            margin-bottom: 10px;
+        }
+        .podcastBottomStripe3 {
+            width: 100%;
+            background-color: #CBC3C3;
+            height: 75px;
+            margin-bottom: 10px;
+        }
+
     }
 }
